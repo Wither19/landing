@@ -21,7 +21,10 @@ div {
   text-align:center;
 }
 a {
+  font-family:'Gabarito', cursive;
+  font-size:30px;
   color:blue;
+  text-align:center;
   text-decoration:none;
   transition:all 200ms;
 }
@@ -32,5 +35,5 @@ a:visited {
   color:blue;
 }
 a:active {
-  color:green;
+  color:pink;
 }
