@@ -7,3 +7,23 @@ h1 {
   font-family:'Gabarito,' cursive;
   text-align:center;
 }
+div {
+  font-family:'Gabarito', cursive;
+  font-size:30px;
+  color:antiquewhite;
+  text-align:center;
+}
+a {
+  color:blue;
+  text-decoration:none;
+  transition:all 200ms;
+}
+a:hover {
+  color:#9370db;
+}
+a:visited {
+  color:blue;
+}
+a:active {
+  color:green;
+}
