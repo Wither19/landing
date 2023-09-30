@@ -28,6 +28,7 @@ a {
   transition:all 200ms;
 }
 a:hover {
+  font-size:34px;
   color:#9370db;
 }
 a:visited {
