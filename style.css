@@ -48,7 +48,8 @@ a {
   transition:all 200ms;
 }
 a:hover {
-  font-size:34px;
+transform:translate(0, -4px);
+  filter:drop-shadow(6px 6px 2px gray);
   color:#9370db;
 }
 a:active {
