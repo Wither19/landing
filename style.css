@@ -45,6 +45,7 @@ a {
   font-size:30px;
   color:blue;
   text-decoration:none;
+  display:block;
   transition:all 200ms;
 }
 a:hover {
