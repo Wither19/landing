@@ -48,7 +48,7 @@ a {
   transition:all 200ms;
 }
 a:hover {
-transform:translate(0, -4px);
+  transform:translate(0, -4px);
   filter:drop-shadow(6px 6px 2px gray);
   color:#9370db;
 }
