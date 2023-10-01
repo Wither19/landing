@@ -10,7 +10,7 @@ h1 {
 }
 h1:hover {
   transform:translate(0, -4px);
-  filter:drop-shadow(6px 6px 2px gray);
+  filter:drop-shadow(7px 7px 2px gray);
 }
 h2 {
   color:antiquewhite;
@@ -21,7 +21,7 @@ h2 {
 }
 h2:hover {
   transform:translate(0, -4px);
-  filter:drop-shadow(6px 6px 2px gray);
+  filter:drop-shadow(5px 5px 2px gray);
 }
 h3 {
 color:antiquewhite;
@@ -32,7 +32,7 @@ color:antiquewhite;
 }
 h3:hover {
   transform:translate(0, -4px);
-  filter:drop-shadow(6px 6px 2px gray);
+  filter:drop-shadow(5px 5px 2px gray);
 }
 div {
   font-family: 'Gabarito', cursive;
@@ -50,7 +50,7 @@ a {
 }
 a:hover {
   transform:translate(0, -4px);
-  filter:drop-shadow(6px 6px 2px gray);
+          filter:drop-shadow(6px 6px 2px lightslategray);
   color:#9370db;
 }
 a:active {
