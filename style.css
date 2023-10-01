@@ -55,6 +55,13 @@ transform:translate(0, -4px);
 a:active {
   color:pink;
 }
+iframe {
+  transition:all 200ms;
+}
+iframe:hover {
+  transform:translate(0, -8px);
+  filter:drop-shadow(6px 6px 2px gray);
+}
 scripture {
             border-top:none;
             border-left:solid 4px lightskyblue;
