@@ -76,3 +76,11 @@ scripture {
             text-align:center;
             color:antiquewhite;
         }
+img.left {
+  float:left;
+  width:300px;
+}
+img.right {
+  float:right;
+  width:300px;
+}
