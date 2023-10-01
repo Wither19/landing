@@ -1,5 +1,5 @@
 body {
-background-image: linear-gradient(90deg, darkblue 0%, mediumpurple 35%, lavender 100%);
+background-image: linear-gradient(315deg, darkblue 0%, mediumpurple 35%, lavender 100%);
 }
 h1 {
   color:antiquewhite;
@@ -44,6 +44,6 @@ scripture {
             line-height:110%;
             margin:10px auto 10px auto;
             padding:5px;
-            width:65%
+            width:65%;
             background-color:antiquewhite;
         }
