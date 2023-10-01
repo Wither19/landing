@@ -5,15 +5,20 @@ h1 {
   color:antiquewhite;
   font-family: 'Mukta', sans-serif;
   text-align:center;
-  font-size:51px;
+  font-size:64px;
 }
 h2 {
   color:antiquewhite;
   font-family: 'Mukta', sans-serif;
   text-align:center;
-  font-size:45px;
+  font-size:48px;
 }
-
+h3 {
+color:antiquewhite;
+  font-family: 'Mukta', sans-serif;
+  text-align:center;
+  font-size:38px;
+}
 div {
   font-family: 'Gabarito', cursive;
   font-size:30px;
