@@ -83,7 +83,7 @@ scripture {
         }
 scripture:hover {
             transform:translate(0px, -4px);
-            filter:drop-shadow(6px 6px 2px);
+            filter:drop-shadow(6px 6px 2px gray);
 }
 img {
   float:left;
