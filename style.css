@@ -51,17 +51,17 @@ a {
 a:hover {
   transform:translate(0, -4px);
           filter:drop-shadow(6px 6px 2px lightslategray);
-  color:#9370db;
+  color:pink;
 }
 a:active {
-  color:pink;
+  color:antiquewhite;
 }
 iframe {
   transition:all 200ms;
 }
 iframe:hover {
   transform:translate(0, -8px);
-  filter:drop-shadow(6px 6px 2px gray);
+  filter:drop-shadow(8px 8px 2px gray);
 }
 scripture {
             border-top:none;
@@ -76,6 +76,7 @@ scripture {
             width:65%;
             text-align:center;
             color:antiquewhite;
+            display:block;
         }
 img {
   float:left;
