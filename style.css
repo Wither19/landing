@@ -47,6 +47,7 @@ a {
   text-decoration:none;
   display:block;
   transition:all 200ms;
+  font-weight:bolder;
 }
 a:hover {
   transform:translate(0, -4px);
