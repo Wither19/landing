@@ -98,8 +98,8 @@ scripture {
 scripture:hover {
             transform:translate(0px, -4px);
             filter:drop-shadow(6px 6px 2px lightgray);
-            color:antiquewhite;
-            background-color:black;
+            color:#E6E6FF;
+              background-color:#98AFC7;
 }
 img {
   float:left;
