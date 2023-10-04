@@ -57,6 +57,19 @@ a:hover {
 a:active {
   color:antiquewhite;
 }
+a.scripture {
+  font-family:inherit;
+  font-size:inherit;
+  font-weight:inherit;
+  color:inherit;
+  transition:all 200ms;
+}
+a.scripture:hover {
+  transform:translate(0px, -4px);
+  filter:drop-shadow(6px 6px 2px lightgray);
+  color:inherit;
+  background-color:inherit;
+}
 iframe {
   transition:all 200ms;
 }
@@ -85,6 +98,8 @@ scripture {
 scripture:hover {
             transform:translate(0px, -4px);
             filter:drop-shadow(6px 6px 2px lightgray);
+            color:antiquewhite;
+            background-color:black;
 }
 img {
   float:left;
