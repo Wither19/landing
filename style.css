@@ -104,6 +104,7 @@ scripture:hover {
 scripture:active {
   color:#80aeff;
   background-color:#dee5ed;
+  transition:all 150ms;
 }
 img {
   float:left;
