@@ -101,6 +101,10 @@ scripture:hover {
             color:#E6E6FF;
               background-color:#98AFC7;
 }
+scripture:active {
+  color:#80aeff;
+  background-color:#dee5ed;
+}
 img {
   float:left;
   width:300px;
