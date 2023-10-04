@@ -62,7 +62,7 @@ a.scripture {
   font-size:inherit;
   font-weight:inherit;
   color:inherit;
-  transition:all 200ms;
+  transition:all 400ms;
 }
 a.scripture:hover {
   transform:translate(0px, -4px);
@@ -93,7 +93,7 @@ scripture {
             color:black;
             background-color:antiquewhite;
             display:block;
-            transition:all 200ms;
+            transition:all 400ms;
         }
 scripture:hover {
             transform:translate(0px, -4px);
