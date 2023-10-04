@@ -102,8 +102,8 @@ scripture:hover {
               background-color:darkslateblue;
 }
 scripture:active {
-  color:#80aeff;
-  background-color:#9acfd7;
+  color:#4b67cc;
+  background-color:#73c9ff;
   transition:all 150ms;
 }
 img {
