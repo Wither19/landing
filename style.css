@@ -99,11 +99,11 @@ scripture:hover {
             transform:translate(0px, -4px);
             filter:drop-shadow(6px 6px 2px lightgray);
             color:#E6E6FF;
-              background-color:#98AFC7;
+              background-color:darkslateblue;
 }
 scripture:active {
   color:#80aeff;
-  background-color:#dee5ed;
+  background-color:#9acfd7;
   transition:all 150ms;
 }
 img {
