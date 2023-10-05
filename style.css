@@ -118,22 +118,22 @@ ul.flip-panel li.flip-text {
       border:solid 2px indigo;
       border-radius:3px;
       margin:20px auto 20px auto;
-      padding:2px;
-      width:65%;
+      padding:5px;
+      width: 55%;
       font-family:'Mukta', sans-serif;
       text-align:center;
       background-color:antiquewhite;
       font-size:32px;
       transition:transform 0.75s, background-color 1s, color 1.25s, filter 0.4s;
-      display:block;
-    }
-   ul.flip-panel:hover li.flip-text {
+      display: block;
+}
+li.flip-text:hover {
       transform: rotateX(720deg);
       color:#4b67cc;
       background-color:#73c9ff;
       filter:drop-shadow(6px 6px 2px gray);
     }
-ul.flip-panel:active li.flip-text {
+ul.flip-panel li.flip-text:active {
       color:#E6E6FF;
       background-color:darkslateblue;
       transition:all 150ms;
