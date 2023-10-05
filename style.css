@@ -155,3 +155,28 @@ li.flip-text:active a {
   background-color:darkslateblue;
   transition:color 150ms, background-color 150ms;
 }
+div.skew {
+      border:solid 1px;
+      border-radius:9px;
+      line-height:125%;
+      width:35%;
+      font-family:'Mukta', sans-serif;
+      font-size:32px;
+      margin:80px auto 10px auto;
+      background-color:antiquewhite;
+      transform-origin:top left;
+      transition:all 200ms;
+    }
+    div.skew:hover {
+      z-index: 1;
+      transform:rotate(-6deg);
+      filter:drop-shadow(6px 6px 2px lightgray);
+      color:#4b67cc;
+      background-color:#73c9ff;
+    }
+    div.skew:active {
+      color:#E6E6FF;
+      background-color:darkslateblue;
+      filter:drop-shadow(10px 10px 2px lightgray);
+      transition:all 150ms;
+    }
