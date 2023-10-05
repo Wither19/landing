@@ -139,7 +139,7 @@ ul.flip-panel:active li.flip-text {
       transition:all 150ms;
 }
 li.flip-text a {
-  transition:inherit;
+  transition:all 200ms;
 }
 li.flip-text:hover a {
   background-color:#73c9ff;
