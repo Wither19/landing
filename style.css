@@ -142,7 +142,7 @@ li.flip-text a {
   transition:all 400ms;
 }
 li.flip-text:hover a {
-  background-color:#73c9ff;
+  background-color:mediumslateblue;
   filter:none;
   transform:none;
 }
