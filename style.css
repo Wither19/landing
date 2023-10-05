@@ -138,3 +138,16 @@ ul.flip-panel:active li.flip-text {
       background-color:darkslateblue;
       transition:all 150ms;
 }
+li.flip-text a {
+  transition:inherit;
+}
+li.flip-text:hover a {
+  background-color:inherit;
+  filter:none;
+  transform:none;
+}
+li.flip-text:active a {
+  color:inherit;
+  background-color:inherit;
+  transition:inherit;
+}
