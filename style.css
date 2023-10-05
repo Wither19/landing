@@ -159,17 +159,16 @@ div.skew {
       border:solid 1px;
       border-radius:9px;
       line-height:125%;
-      width:35%;
+      width:15%;
       font-family:'Mukta', sans-serif;
       color:black;
-      font-size:32px;
+      font-size:20px;
       margin:10px auto 10px auto;
       background-color:antiquewhite;
       transform-origin:top left;
       transition:all 250ms;
     }
     div.skew:hover {
-      z-index: 1;
       transform:rotate(-2deg);
       filter:drop-shadow(6px 6px 2px lightgray);
       color:#4b67cc;
