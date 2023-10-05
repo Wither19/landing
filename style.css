@@ -127,13 +127,13 @@ ul.flip-panel li.flip-text {
       transition:transform 0.75s, background-color 1s, color 1.25s, filter 0.4s;
       display: block;
 }
-ul.flip-panel li.flip-text:hover {
+ul.flip-panel:hover li.flip-text {
       transform: rotateX(720deg);
       color:#4b67cc;
       background-color:#73c9ff;
       filter:drop-shadow(6px 6px 2px gray);
     }
-ul.flip-panel li.flip-text:active {
+ul.flip-panel:active li.flip-text {
       color:#E6E6FF;
       background-color:darkslateblue;
       transition:all 150ms;
