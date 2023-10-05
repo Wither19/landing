@@ -150,5 +150,5 @@ li.flip-text:hover a {
 li.flip-text:active a {
   color:antiquewhite;
   background-color:darkslateblue;
-  transition:all 150ms;
+  transition:color 150ms, background-color 150ms;
 }
