@@ -97,7 +97,7 @@ scripture {
             transition:all 400ms;
         }
 scripture:hover {
-            transform:translate(0px, -4px);
+            transform:translate(0px, -10px);
             filter:drop-shadow(6px 6px 2px lightgray);
             color:#4b67cc;
             background-color:#73c9ff;
@@ -105,7 +105,7 @@ scripture:hover {
 scripture:active {
   color:#E6E6FF;
   background-color:darkslateblue;
-  filter:drop-shadow(10px 10px 2px lightgray);
+  filter:drop-shadow(12px 12px 2px lightgray);
   transition:all 150ms;
 }
 img {
@@ -137,8 +137,8 @@ ul.flip-panel:hover li.flip-text {
 ul.flip-panel:active li.flip-text {
       color:#E6E6FF;
       background-color:darkslateblue;
-      filter:drop-shadow(10px 10px 2px lightgray);
-      transform:translate(0px, -4px);
+      filter:drop-shadow(12px 12px 2px lightgray);
+      transform:translate(0px, -10px);
       transition:all 0.15s;
 }
 li.flip-text a {
@@ -178,6 +178,6 @@ div.skew {
     div.skew:active {
       color:#E6E6FF;
       background-color:darkslateblue;
-      filter:drop-shadow(10px 10px 2px lightgray);
+      filter:drop-shadow(12px 12px 2px lightgray);
       transition:all 150ms;
     }
