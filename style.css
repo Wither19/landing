@@ -127,7 +127,7 @@ ul.flip-panel li.flip-text {
       transition:transform 0.75s, background-color 1s, color 1.25s, filter 0.4s;
       display: block;
 }
-ul. flip-panel li.flip-text:hover {
+ul.flip-panel li.flip-text:hover {
       transform: rotateX(720deg);
       color:#4b67cc;
       background-color:#73c9ff;
