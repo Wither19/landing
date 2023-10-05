@@ -166,7 +166,7 @@ div.skew {
       margin:10px auto 10px auto;
       background-color:antiquewhite;
       transform-origin:top left;
-      transition:all 350ms;
+      transition:all 250ms;
     }
     div.skew:hover {
       z-index: 1;
