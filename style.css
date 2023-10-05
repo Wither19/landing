@@ -162,7 +162,7 @@ div.skew {
       width:35%;
       font-family:'Mukta', sans-serif;
       font-size:32px;
-      margin:80px auto 10px auto;
+      margin:10px auto 10px auto;
       background-color:antiquewhite;
       transform-origin:top left;
       transition:all 200ms;
