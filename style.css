@@ -170,7 +170,7 @@ div.skew {
     }
     div.skew:hover {
       z-index: 1;
-      transform:rotate(-6deg);
+      transform:rotate(-2deg);
       filter:drop-shadow(6px 6px 2px lightgray);
       color:#4b67cc;
       background-color:#73c9ff;
