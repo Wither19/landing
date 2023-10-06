@@ -116,8 +116,11 @@ img {
   font-family:'TF2 Build', sans-serif;
 }
 ul.flip-panel li.flip-text {
-      border:solid 2px indigo;
-      border-radius:3px;
+      border-top:solid 2px antiquewhite;
+      border-left:solid 4px lightskyblue;
+      border-bottom:solid 2px antiquewhite;
+      border-right:solid 2px antiquewhite;
+      border-radius:0px 6px 6px 0px;     
       margin:20px auto 20px auto;
       padding:12px;
       width: 55%;
@@ -156,8 +159,10 @@ li.flip-text:active a {
   transition:color 150ms, background-color 150ms;
 }
 div.skew {
-      border:solid 1px;
-      border-radius:9px;
+      border-top:solid 2px antiquewhite;
+      border-left:solid 4px lightskyblue;
+      border-bottom:solid 2px antiquewhite;
+      border-right:solid 2px antiquewhite;
       line-height:125%;
       width:15%;
       font-family:'Mukta', sans-serif;
