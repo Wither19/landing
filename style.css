@@ -103,7 +103,7 @@ scripture:hover {
             background-color:#73c9ff;
 }
 scripture:active {
-  color:#E6E6FF;
+  color:lightcyan;
   background-color:darkslateblue;
   filter:drop-shadow(12px 12px 2px lightgray);
   transition:all 150ms;
@@ -138,7 +138,7 @@ ul.flip-panel:hover li.flip-text {
       filter:drop-shadow(6px 6px 2px lightgray);
     }
 ul.flip-panel:active li.flip-text {
-      color:#E6E6FF;
+      color:lightcyan;
       background-color:darkslateblue;
       filter:drop-shadow(12px 12px 2px lightgray);
       transform:translate(0px, -10px);
@@ -181,7 +181,7 @@ div.skew {
       background-color:#73c9ff;
     }
     div.skew:active {
-      color:#E6E6FF;
+      color:lightcyan;
       background-color:darkslateblue;
       filter:drop-shadow(12px 12px 2px lightgray);
       transition:all 250ms;
