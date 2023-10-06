@@ -133,7 +133,7 @@ ul.flip-panel li.flip-text {
       display: block;
 }
 ul.flip-panel:hover li.flip-text {
-      transform: rotateX(720deg);
+      transform: rotate3D( 1 0 0 720deg);
       color:#4b67cc;
       background-color:#73c9ff;
       filter:drop-shadow(6px 6px 2px lightgray);
