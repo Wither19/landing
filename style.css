@@ -163,6 +163,7 @@ div.skew {
       border-left:solid 4px lightskyblue;
       border-bottom:solid 2px antiquewhite;
       border-right:solid 2px antiquewhite;
+      border-radius:0px 6px 6px 0px;
       line-height:125%;
       width:15%;
       font-family:'Mukta', sans-serif;
