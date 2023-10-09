@@ -191,3 +191,8 @@ div.skew {
       transform:translate(0px, -4px), rotate(-2deg);
       transition:all 250ms;
     }
+    .left {
+        position:relative;
+        top:30px;
+        left:-350px;
+    }
