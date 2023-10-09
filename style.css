@@ -188,5 +188,6 @@ div.skew {
       color:#91e3e3;
       background-color:darkslateblue;
       filter:drop-shadow(12px 12px 2px lightgray);
+      transform:translate(0px, -4px), rotate(-2deg);
       transition:all 250ms;
     }
