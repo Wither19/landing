@@ -78,6 +78,9 @@ iframe:hover {
   transform:translate(0, -8px);
   filter:drop-shadow(8px 8px 2px lightgray);
 }
+.html5-video-player {
+  font-family: 'Arimo', sans-serif;
+}
 scripture {
             border-top:solid 2px antiquewhite;
             border-left:solid 4px lightskyblue;
