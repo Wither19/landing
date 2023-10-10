@@ -73,6 +73,7 @@ a.scripture:hover {
 iframe {
   transition:all 200ms;
   margin:10px 10px 10px 10px;
+  display:inline;
 }
 iframe:hover {
   transform:translate(0, -8px);
