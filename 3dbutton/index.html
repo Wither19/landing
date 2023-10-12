@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ex1 {
+  perspective: 200px;
+}
+
+.cube {
+  font-size: 3em;
+  width: 2em;
+  margin: 1.5em auto;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(0deg);
+  transition: transform 0.75s;
+  font-family: 'Mukta', sans-serif;
+}
+
+.cube:hover {
+  transform: rotateY(20deg);
+  }
+  
+.side {
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background: rgba(250, 235, 215, 0.8);
+  border: 1px solid lightskyblue;
+  text-align: center;
+  line-height: 2em;
+}
+
+.front {transform: translateZ(1em);}
+.top {transform: rotateX(90deg) translateZ(1em);}
+.right {transform: rotateY(90deg) translateZ(1em);}
+.left {transform: rotateY(-90deg) translateZ(1em);}
+.bottom {transform: rotateX(-90deg) translateZ(1em);}
+.back {transform: rotateY(-180deg) translateZ(1em);}
+</style>
+</head>
+<body>
+<h2>perspective: 800px:</h2>
+<div class="ex1">
+  <div class="cube">
+  <div class="side front">1</div>
+  <div class="side back"></div>
+  <div class="side right"></div>
+  <div class="side left"></div>
+  <div class="side top"></div>
+  <div class="side bottom"></div>
+  </div>
+</div>
+
+<h2 style="margin-top:300px">perspective: 150px:</h2>
+<div class="ex2">
+  <div class="cube">
+  <div class="side front">1</div>
+  <div class="side back">6</div>
+  <div class="side right">4</div>
+  <div class="side left">3</div>
+  <div class="side top">5</div>
+  <div class="side bottom">2</div>
+  </div>
+</div>
+
+</body>
+</html>
