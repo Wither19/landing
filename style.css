@@ -119,7 +119,7 @@ img {
 }
 .svg {
   width:105px;
-  margin:10px;
+  margin:10px auto 10px auto;
 }
 #tf2 {
   font-family:'TF2 Build', sans-serif;
