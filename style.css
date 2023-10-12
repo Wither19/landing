@@ -117,6 +117,10 @@ img {
   float:left;
   width:300px;
 }
+.svg {
+  width:105px;
+  margin:10px;
+}
 #tf2 {
   font-family:'TF2 Build', sans-serif;
 }
