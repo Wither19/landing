@@ -142,34 +142,32 @@ ul.flip-panel li.flip-text {
       text-align:center;
       background-color:antiquewhite;
       font-size:32px;
-      transition:transform 0.75s, background-color 1s, color 1.25s, filter 0.4s;
+      transition:transform 0.4s, background-color 1s, color 1.25s, filter 0.4s;
       display: block;
 }
 ul.flip-panel:hover li.flip-text {
-      transform: rotate3D( 1, 0, 0, 720deg);
+      transform: scale(110%) translate(0px, -11px);
       color:#4b67cc;
       background-color:#73c9ff;
-      filter:drop-shadow(6px 6px 2px lightgray);
+      filter:drop-shadow(10px 10px 2px lightgray);
     }
 ul.flip-panel:active li.flip-text {
       color:#91e3e3;
       background-color:darkslateblue;
-      filter:drop-shadow(12px 12px 2px lightgray);
-      transform:translate(0px, -10px);
+      filter:drop-shadow(8px 8px 2px lightgray);
+      transform:translate(0px, -6px);
       transition:all 0.15s;
 }
 li.flip-text a {
   transition:all 400ms;
 }
 li.flip-text:hover a {
-  background-color:#73c9ff;
   color:mediumslateblue;
   filter:none;
   transform:none;
 }
 li.flip-text:active a {
   color:antiquewhite;
-  background-color:darkslateblue;
   transition:color 150ms, background-color 150ms;
 }
 div.skew {
