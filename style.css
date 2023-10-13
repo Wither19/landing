@@ -117,9 +117,17 @@ img {
   float:left;
   width:300px;
 }
-#tf2 {
-  font-family:'TF2 Build', sans-serif;
+    #tf2 {
   font-weight:400;
+}
+.svg {
+  width:80px;
+  position: relative;
+  left: -270px;
+  transition: filter 400ms;
+}
+.svg:hover {
+  filter:invert(100%) drop-shadow(4px 4px 2px gray);
 }
 ul.flip-panel li.flip-text {
       border-top:solid 2px antiquewhite;
