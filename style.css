@@ -124,6 +124,7 @@ img {
       }
 #tf2 {
   font-family:'TF2 Build', sans-serif;
+  font-weight:400;
 }
 ul.flip-panel li.flip-text {
       border-top:solid 2px antiquewhite;
