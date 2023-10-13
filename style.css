@@ -208,7 +208,7 @@ div.skew {
   .window {
     background-position:center;
     background-attachment:fixed;
-    background-size:1366px 768px;
+    background-size:1920px 1080px;
     filter:brightness(80%) blur(2px);
     transition:filter 250ms;
   }
