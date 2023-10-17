@@ -224,7 +224,7 @@ div.skew {
   .cp_process {
     background-image:url(https://wither19.github.io/landing/docs/assets/images/cp_process.jpg);
   }
-.windowlink {
+a.windowlink {
   transform: none;
   filter: none;
 }
