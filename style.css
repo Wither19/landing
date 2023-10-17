@@ -71,13 +71,13 @@ a.scripture:hover {
   background-color:inherit;
 }
 iframe {
-  transition:all 200ms;
+  transition:all 600ms;
   margin:10px 10px 10px 10px;
   display:inline;
 }
 iframe:hover {
   transform:translate(0, -8px);
-  filter:drop-shadow(8px 8px 2px lightgray);
+  filter:drop-shadow(8px 8px 2px lightslategray);
 }
 .html5-video-player {
   font-family: 'Arimo', sans-serif;
