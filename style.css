@@ -109,10 +109,11 @@ scripture:hover {
 scripture:active {
   color:#91e3e3;
   background-color:darkslateblue;
-  transform:translate(0px, -18px);
+  transform:translate(0px, -2px);
   filter:drop-shadow(12px 12px 2px lightgray);
   transition:all 150ms;
 }
+img {
 img {
   float:left;
   width:300px;
