@@ -8,10 +8,6 @@ h1 {
   font-size:64px;
   transition:all 200ms;
 }
-h1:hover {
-  transform:translate(0, -4px);
-  filter:drop-shadow(7px 7px 2px gray);
-}
 h2 {
   color:antiquewhite;
   font-family: 'Mukta', sans-serif;
@@ -19,20 +15,12 @@ h2 {
   font-size:48px;
   transition:all 200ms;
 }
-h2:hover {
-  transform:translate(0, -4px);
-  filter:drop-shadow(5px 5px 2px gray);
-}
 h3 {
 color:antiquewhite;
   font-family: 'Mukta', sans-serif;
   text-align:center;
   font-size:38px;
   transition:all 200ms;
-}
-h3:hover {
-  transform:translate(0, -4px);
-  filter:drop-shadow(5px 5px 2px gray);
 }
 div {
   font-family: 'Arimo', sans-serif;
