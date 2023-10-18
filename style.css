@@ -67,8 +67,20 @@ iframe:hover {
   transform:translate(0, -8px);
   filter:drop-shadow(8px 8px 2px lightslategray);
 }
-.html5-video-player {
-  font-family: 'Arimo', sans-serif;
+.ytp-title-text {
+    font-family: Tahoma;
+    vertical-align: top;
+    max-width: 100%;
+    padding-top: 12px;
+    font-size: 20px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    padding-left: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    text-overflow: ellipsis;
 }
 scripture {
             border-top:solid 2px antiquewhite;
