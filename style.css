@@ -236,3 +236,8 @@ h2>october:hover {
     color: orange;
     filter: drop-shadow(2px 4px 6px purple);
 }
+h2#dropdownoctober {
+    transition: all 500ms;
+    transition-delay: 0.05s;
+    transition-property: width, height;
+}
