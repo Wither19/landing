@@ -216,3 +216,21 @@ a.windowlink {
   transform: none;
   filter: none;
 }
+h2>october {
+    transition: all 0.5s;
+}
+
+h2>october:hover {
+    color: orange;
+    filter: drop-shadow(2px 4px 6px purple);
+}
+
+h2>october:hover img {
+    opacity:1;
+}
+
+h2>october img {
+    transition: opacity 0.65s;
+    position: absolute;
+    opacity: 0;
+}
