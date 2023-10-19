@@ -241,3 +241,10 @@ h2>october:hover {
     transition-delay: 0.05s, 0.05s, 0.01s;
     transition-property: width, height, opacity;
 }
+h3#collapseoctober {
+    transition: all 300ms;
+}
+h3#collapseoctober:hover {
+    filter: drop-shadow(6px 6px 2px lightgray);
+    transform: translate(0px, -2px);
+}
