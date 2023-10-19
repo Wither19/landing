@@ -270,3 +270,8 @@ h3#collapseoctober:hover {
     filter: drop-shadow(6px 6px 2px lightgray);
     transform: translate(0px, -2px);
 }
+.hidethisbadcodefortheloveofpete {
+  visibility: hidden;
+  display: none;
+}
+}
