@@ -235,6 +235,7 @@ h2>october {
 h2>october:hover {
     color: orange;
     filter: drop-shadow(2px 4px 6px purple);
+    transform: translate(0px, -2px);
 }
     h2#dropdownoctober {
     transition: width 500ms, height 500ms, opacity 300ms;
