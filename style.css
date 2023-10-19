@@ -262,3 +262,11 @@ h3#collapseoctober:hover {
     transition-delay:200ms;
     transition:property:filter;
 }
+#niv, #nlt {
+    cursor: pointer; 
+    transition: all 300ms;
+}
+#niv:hover, #nlt:hover {
+    filter: drop-shadow(6px 6px 2px lightgray);
+    transform: translate(0px, -2px);
+}
