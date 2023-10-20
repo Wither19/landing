@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body > *{
+      font-family:Verdana;
+    }
+    button {
+      font-size:64px;
+      transition:all 400ms;
+      text-align:center;
+      margin: 10px auto 10px auto;
+      border: 2px solid darkslateblue;
+    }
+    button:hover {
+      background-color:darkslategray;
+      color:white;
+      transform:translate(0px, -4px);
+      filter:drop-shadow(6px 6px 2px lightgray);
+    }
+    button:active {
+      transition:all 150ms;
+      transform:translate(0px, 4px) scale(1.05);
+      background-color:lightblue;
+    }
+    #content {
+      font-size:30px;
+      border-top: 1px solid gray;
+      border-left:1px solid gray;
+      border-bottom:1px solid gray;
+      border-right:1px solid gray;
+      margin:10px auto 10px auto;
+    }
+    #content>button:nth-child(1) {
+      position:relative;
+      top:100px;
+      left:-280px;
+      font-size:30px;
+    }
+    #content>button:nth-child(2) {
+      position:relative;
+      top:100px;
+      left:0px;
+      font-size:30px;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="document.getElementById('content').style.visibility = 'visible'">Open</button>
+  <div style="visibility: hidden;" id="content">this is super funny<button onclick="document.getElementById('content').style.visibility = 'hidden'">Yes</button><button onclick="document.getElementById('content').style.visibility = 'hidden'">Nah</button></div>
+</body>
+</html>
