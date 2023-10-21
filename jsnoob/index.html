@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+<style>
+        #thing {
+        transition: all 400ms;
+        transition-delay: 100ms;
+        transition-property: opacity;
+    }
+</style>
+</head>
+<body>
+<button onclick="document.getElementById('thing').style.opacity = '1'; document.getElementById('thing').style.height = 'auto';">on</button>
+<button onclick="document.getElementById('thing').style.opacity = '0'; document.getElementById('thing').style.height = '0px';">off</button><br>
+<div id="thing" style="opacity: 0; height: 0px;">This is real time online HTML Editor</div>
+</body>
+</html>
