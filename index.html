@@ -12,12 +12,20 @@
 <body>
     <h1>Welcome to my domain</h1>  
     <br>
-    <h2>Navigation</h2>
+    <h2 id="nav">Navigation</h2>
     <br>
     <br>
       <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/homepageproject">Homepage Project</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/calvarychemnotes">Chemistry Notes</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a id="tf2" href="https://wither19.github.io/thatdivisaspy">That div is a spy!</a></li></ul>
+        <ul class="flip-panel"><li class="flip-text"><a href="#misclist" onclick="document.getElementById('misclist').style.visibility = 'visible'; document.getElementById('misclist').style.width = 'auto'; document.getElementById('misclist').style.height = 'auto'; document.getElementById('misclist').style.opacity = '1'; document.getElementById('collapsemisc').style.visibility = 'visible'; document.getElementById('collapsemisc').style.width = 'auto'; document.getElementById('collapsemisc').style.height = 'auto'; document.getElementById('collapsemisc').style.opacity = '1';">Miscellaneous</a></li></ul>
+        <br>
+        <div id="misclist" style="visibility: hidden; width: 0px; height: 0px; opacity: 0;"><h2 id="collapsemisc"><a href="#nav" onclick="document.getElementById('misclist').style.visibility = 'hidden'; document.getElementById('misclist').style.width = '0px'; document.getElementById('misclist').style.height = '0px'; document.getElementById('misclist').style.opacity = '0'; document.getElementById('collapsemisc').style.visibility = 'hidden'; document.getElementById('collapsemisc').style.width = '0px'; document.getElementById('collapsemisc').style.height = '0px'; document.getElementById('collapsemisc').style.opacity = '0';">Collapse</a></h2><br><br>
+        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/buttonlol">Landing Page Buttons<br><br><br><sub>various buttons used or unused that are coded in this landing page.</sub></a></li></ul>
+        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/jsnoob">HTML DOM Playground<br><br><br><sub>Random projects made using rudimentary HTML DOM knowledge.</sub></a></li></ul>
+        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/multidropshadowbutton">CSS Shadow Experiments</a></li></ul>
+        </div>
+        <sub>*Note that these are tiny side projects for my experimentation and for me to learn, and that they may not be mobile-compatible (or interesting).</sub>
     <br>
     <br>
     <center>
