@@ -22,6 +22,8 @@
     }
     span {
       transition: all 250ms;
+      transition-delay: 200ms;
+      transition-property: background-color;
       margin: 10px auto 10px auto;
     }
     span:hover {
@@ -31,12 +33,12 @@
       text-align:center;
     }
         .red, .blue, .green {
-            font-size:200px;
-            font-family:'TF2 Build', sans-serif;
+            font-size:250px;
+            font-family: 'TF2 Build', sans-serif;
             color:white;
             text-align:center;
             transition: all 500ms;
-            padding: 4px;
+            padding: 12px;
             margin: 10px auto 10px auto;
         }
         .red {
@@ -73,6 +75,6 @@
 </head>
 <body id="body">
 <br><br><br><br><br><br><br><br><br>
-<div><span class="red" onmouseover="document.getElementById('body').style.backgroundColor = 'red'" onmouseout="document.getElementById('body').style.backgroundColor = 'gray'">R</span><span class="green" onmouseover="document.getElementById('body').style.backgroundColor = 'lime'" onmouseout="document.getElementById('body').style.backgroundColor = 'gray'">g</span><span class="blue" onmouseover="document.getElementById('body').style.backgroundColor = 'blue'" onmouseout="document.getElementById('body').style.backgroundColor = 'gray'">b</span></div>
+<div><span class="red" onmouseover="document.getElementById('body').style.backgroundColor = 'red'" onmouseout="document.getElementById('body').style.backgroundColor = 'gray'">R</span><span class="green" onmouseover="document.getElementById('body').style.backgroundColor = 'lime'" onmouseout="document.getElementById('body').style.backgroundColor = 'gray'">G</span><span class="blue" onmouseover="document.getElementById('body').style.backgroundColor = 'blue'" onmouseout="document.getElementById('body').style.backgroundColor = 'gray'">B</span></div>
 </body>
 </html>
