@@ -246,8 +246,8 @@ h3#collapseoctober {
     transition: all 300ms;
 }
 h3#collapseoctober:hover {
-    filter: drop-shadow(6px 6px 2px lightgray);
-    transform: translate(0px, -2px);
+    filter: drop-shadow(4px 4px 2px lightgray);
+    transform: translate(0px, -4px);
 }
 .windowtext > * {
     font-family:'TF2 Build', sans-serif;
@@ -273,5 +273,4 @@ h3#collapseoctober:hover {
 .hidethisbadcodefortheloveofpete {
   visibility: hidden;
   display: none;
-}
 }
