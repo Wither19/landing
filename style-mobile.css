@@ -230,6 +230,7 @@ a.windowlink {
 }
 h2>october {
     transition: all 0.5s;
+    font-size: 2em;
 }
 
 h2>october:hover {
@@ -244,6 +245,7 @@ h2>october:hover {
 }
 h3#collapseoctober {
     transition: all 300ms;
+    font-size: 5.5em;
 }
 h3#collapseoctober:hover {
     filter: drop-shadow(6px 6px 2px lightgray);
