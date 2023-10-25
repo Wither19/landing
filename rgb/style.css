@@ -1,8 +1,8 @@
 
     :root {
-        --redteam: #A35A52;
+        --redteam: #A45A52;
         --redteamalt: #F5F5DC;
-        --bluteam: #365588;
+        --bluteam: #367588;
         --redgradient: 1px 1px #ffffff, 2px 2px #ffcccc, 3px 3px #ff9999, 4px 4px #ff6666, 5px 5px #ff3333, 6px 6px #ff0000, 7px 7px #cc0000, 8px 8px #990000, 9px 9px #660000, 10px 10px #330000;
         --bluegradient: 1px 1px #ffffff, 2px 2px #ccccff, 3px 3px #9999ff, 4px 4px #6666ff, 5px 5px #3333ff, 6px 6px #0000ff, 7px 7px #0000cc, 8px 8px #000099, 9px 9px #000066, 10px 10px #000033;
         --greengradient: 1px 1px #ffffff, 2px 2px #ccffcc, 3px 3px #99ff99, 4px 4px #66ff66, 5px 5px #33ff33, 6px 6px #00ff00, 7px 7px #00cc00, 8px 8px #009900, 9px 9px #006600, 10px 10px #003300;
