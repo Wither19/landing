@@ -138,7 +138,7 @@ ul.flip-panel li.flip-text {
     border-radius: 0px 6px 6px 0px;
     margin: 24px auto 24px auto;
     padding: 20px;
-    width: 55%;
+    width: 75%;
     font-family: 'Mukta', sans-serif;
     text-align: center;
     background-color: antiquewhite;
@@ -161,6 +161,7 @@ ul.flip-panel:active li.flip-text {
 }
 li.flip-text a {
   transition:all 400ms;
+  font-size: 40px;
 }
 li.flip-text:hover a {
   color:mediumslateblue;
