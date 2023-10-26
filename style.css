@@ -280,3 +280,7 @@ sub {
   font-size:28px;
   font-weight: 500;
 }
+iframe.youtubeshortsmobile {
+    width: 708px;
+    height: 903px;
+}
