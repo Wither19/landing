@@ -163,7 +163,7 @@ li.flip-text a {
   transition:all 400ms;
 }
 li.flip-text:hover a {
-  color:mediumslateblue;
+  color:#afa3f5;
   filter:none;
   transform:none;
 }
