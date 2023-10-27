@@ -149,7 +149,7 @@ ul.flip-panel li.flip-text {
 ul.flip-panel:hover li.flip-text {
       transform: scale(110%) translate(0px, -11px);
       color:#4b67cc;
-      background-color:#73c9ff;
+      background-color:#0071c5;
       filter:drop-shadow(10px 10px 2px lightgray);
     }
 ul.flip-panel:active li.flip-text {
