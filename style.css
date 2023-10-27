@@ -165,7 +165,7 @@ li.flip-text a {
   cursor: pointer;
 }
 li.flip-text:hover a {
-  color:mediumslateblue;
+  color:#afa3f5;
   filter:none;
   transform:none;
 }
