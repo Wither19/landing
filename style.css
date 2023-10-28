@@ -145,6 +145,7 @@ ul.flip-panel li.flip-text {
     font-size: 32px;
     transition: transform 0.4s, background-color 1s, color 1.25s, filter 0.4s;
     display: block;
+    user-select: none;
 }
 ul.flip-panel:hover li.flip-text {
       transform: scale(110%) translate(0px, -11px);
@@ -163,6 +164,7 @@ li.flip-text a {
   transition:all 400ms;
   font-size: 40px;
   cursor: pointer;
+  user-select: none;
 }
 li.flip-text:hover a {
   color:#afa3f5;
@@ -283,4 +285,7 @@ sub {
 iframe.youtubeshortsmobile {
     width: 708px;
     height: 903px;
+}
+br {
+  user-select: none;
 }
