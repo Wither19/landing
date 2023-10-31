@@ -1,6 +1,3 @@
-html, body {
-overflow-y: hidden;
-}
 body {
 background-image: linear-gradient(315deg, darkblue 8%, mediumpurple 35%, lavender 100%);
 }
