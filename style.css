@@ -1,6 +1,7 @@
 html, body {
-  max-height: 100%;
-  overflow-y: hidden;
+max-height: 100%;
+overflow-y: hidden;
+}
 body {
 background-image: linear-gradient(315deg, darkblue 8%, mediumpurple 35%, lavender 100%);
 }
