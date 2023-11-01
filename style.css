@@ -58,6 +58,9 @@ a.scripture:hover {
   color:inherit;
   background-color:inherit;
 }
+h2 > a.scripture {
+    display: contents;
+}
 iframe {
   transition:all 600ms;
   margin:10px 10px 10px 10px;
