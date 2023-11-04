@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
-<title>Online HTML Editor</title>
-<head>
+<html><head><title>Online HTML Editor</title>
+
     <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">
     <style>
         body {
@@ -23,9 +21,14 @@
          transition: 70ms ease-out;
         margin: 20px auto 20px auto;
         cursor: pointer;
+        user-select: none;
         }
         .nsmbu-save:hover {
         transform: translate(0px, 2px) scale(1.1);
+        }
+        .nsmbu-save:active {
+        transform: translate(0px, -6px);
+        transition: 150ms ease-out;
         }
         .nsmbu-save span.number {
             color: #6495ED;
@@ -43,9 +46,9 @@
         li {
             list-style-type: none;
         }
-    </style>
-</head>
+</style>
+<style type="text/css" id="operaUserStyle"></style></head>
 <body>
 <div class="nsmbu-save"><span class="new">NEW!</span><span class="number">1</span></div>
-</body>
-</html>
+
+</body></html>
