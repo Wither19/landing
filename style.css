@@ -300,41 +300,52 @@ iframe.youtubeshortsmobile {
 br {
   user-select: none;
 }
-  li.flip-panel {
-    animation: float 2s linear infinite;
-  }
-  @keyframes float {
-    0% {
-      transform: translate(0px, 0px);
+  h1, h2, h3 {
+        animation: float 6s linear infinite;
     }
-    10% {
-      transform: translate(0px, 2px);
+    @keyframes float {
+        0% {
+            transform: translate(0px, 0px);
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
+        }
+        10% {
+            transform: translate(0px, -2px);
+            filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
+        }
+        20% {
+            transform: translate(0px, -4px);
+            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
+        }
+        30% {
+            transform: translate(0px, -6px);
+            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
+        }
+        40% {
+            transform: translate(0px, -8px);
+            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
+        }
+        50% {
+            transform: translate(0px, -10px);
+            filter: drop-shadow(10px 10px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 20px 8px gray);
+        }
+        60% {
+            transform: translate(0px, -8px);
+            filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 18px 8px gray);
+        }
+        70% {
+            transform: translate(0px, -6px);
+            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 16px 8px gray);
+        }
+        80% {
+            transform: translate(0px, -4px);
+            filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 14px 8px gray);
+        }
+        90% {
+            transform: translate(0px, -2px);
+            filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 12px 8px gray);
+        }
+        100% {
+            transform: translate(0px, 0px);
+            filter: drop-shadow(0px 0px 8px rgba(0, 0, 0, 0)) drop-shadow(0px 10px 8px gray);
+        }
     }
-    20% {
-      transform: translate(0px, 4px);
-    }
-    30% {
-    transform: translate(0px, 6px);
-    }
-    40% {
-    transform: translate(0px, 8px);
-    }
-    50% {
-      transform: translate(0px, 12px);
-    }
-    60% {
-      transform: translate(0px, 8px);
-    }
-    70% {
-      transform: translate(0px, 6px);
-    }
-    80% {
-      transform: translate(0px, 4px);
-    }
-    90% {
-      transform: translate(0px, 2px);
-    }
-    100% {
-      transform: translate(0px, 0px);
-    }
-  }
