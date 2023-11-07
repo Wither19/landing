@@ -232,7 +232,10 @@ h2>october {
     transition: all 0.5s;
     font-size: 2em;
 }
-
+h2>november {
+    transition: all 0.5s;
+    font-size: 2em;
+}
 h2>october:hover {
     color: orange;
     filter: drop-shadow(2px 4px 6px purple);
