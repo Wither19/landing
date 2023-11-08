@@ -1,6 +1,9 @@
 body {
 background-image: linear-gradient(315deg, darkblue 8%, mediumpurple 35%, lavender 100%);
 }
+.antilag > * {
+  animation: none;
+}
   h1, h2, h3 {
         animation: float 6s linear infinite;
     }
@@ -348,7 +351,4 @@ iframe.youtubeshortsmobile {
 }
 br {
   user-select: none;
-}
-.antilag > * {
-  animation: none;
 }
