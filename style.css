@@ -349,4 +349,6 @@ iframe.youtubeshortsmobile {
 br {
   user-select: none;
 }
-
+.antilag > * {
+  animation: none;
+}
