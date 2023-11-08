@@ -63,7 +63,7 @@
 </head>
 <body>
   <a href="https://wither19.github.io" class="stickybutton">Back</a>
-<div onclick="document.getElementById('content').style.display = 'block'">map name<h3>gamemode</h3><h3>click this box to view content!</h3></div>
-<div id="content" style="display: none;" onclick="document.getElementById('content').style.display = 'none'">Content</div>
+<div onclick="document.getElementById('content').style.opacity = '1'; document.getElementById('content').style.transform = 'scale(1)'; document.getElementById('content').style.height = 'auto'">map name<h3>gamemode</h3><h3>click this box to view content!</h3></div>
+<div id="content" style="opacity: 0; transform: scale(0); height: 0px;" onclick="document.getElementById('content').style.opacity = '0'; document.getElementById('content').style.transform = 'scale(0)'; document.getElementById('content').style.height = '0px'">Content</div>
 </body>
 </html>
