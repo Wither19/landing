@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<title>Upward</title>
+<title>Online HTML Editor</title>
 <head>
-  <style>
+    <link href="https://fonts.cdnfonts.com/css/tf2-build" rel="stylesheet">
+                
+    <style>
     body {
       background-image:url(https://wither19.github.io/landing/docs/assets/images/pl_upward.jpg);
       width:auto;
@@ -18,20 +20,50 @@
       background-position:center;
       background-attachment:fixed;
       }
+      body > * {
+          display: none;
+      }
     }
         
     .stickybutton {
-        font-family: 'Mukta', sans-serif;
+        font-family: 'TF2 Build', sans-serif;
         transition:all 200ms;
         position:sticky;
         top:0;
+        color: antiquewhite;
 }
     .stickybutton:hover {
         font-size:20px;
 }
-  </style>
+        div {
+         background: rgba(49, 7, 7, 0.65);
+         border: 6px solid antiquewhite;
+         border-radius: 16px;
+         font-size: 40px;
+         color: antiquewhite;
+         font-family: 'TF2 Build', sans-serif;
+         text-align:center;
+         margin: 10px auto 10px auto;
+        }
+        div h3 {
+        font-size: 32px;
+        font-weight: 400;
+        }
+        div + div {
+        background: rgba(49, 7, 7, 0.65);
+         border: 6px solid antiquewhite;
+         border-radius: 16px;
+         font-size: 24px;
+         color: antiquewhite;
+         font-family: 'TF2 Build', sans-serif;
+         width: 75%; 
+         margin: 10px auto 10px auto;
+        }
+    </style>
 </head>
 <body>
   <a href="https://wither19.github.io" class="stickybutton">Back</a>
+<div>map name<h3>gamemode</h3><h3>click this box to view content!</h3></div>
+<div>Content</div>
 </body>
 </html>
