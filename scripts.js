@@ -1,7 +1,5 @@
-     const = misc;
-     const = miscbutton;
-     misc = document.getElementById('miscellaneous');
-     miscbutton = document.getElementById('miscbutton');
+     const misc = document.getElementById('miscellaneous');
+     const miscbutton = document.getElementById('miscbutton');
      function miscshow() {
         misc.style.visibility = 'visible'; 
         misc.style.width = 'auto';
