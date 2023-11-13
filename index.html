@@ -1,3 +1,4 @@
+
 <html><head>
 <title>Landing Page!</title>
 <link rel="stylesheet" href="https://wither19.github.io/landing/style.css">
@@ -10,7 +11,7 @@
 <link href="https://fonts.cdnfonts.com/css/tf2-build" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">              
 <style type="text/css" id="operaUserStyle"></style></head>
-<body>
+<body onload="miscbutton.addEventListener('click', miscshow);">
     <h1 id="top">Welcome to my domain</h1>  
     <br>
     <h2>Navigation</h2>
@@ -21,9 +22,9 @@
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/calvarychemnotes">Chemistry Notes</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/demoknightcss">Demoknight CSS</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a id="tf2" href="https://wither19.github.io/thatdivisaspy">That div is a spy!</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a onclick="document.getElementById('miscellaneous').style.visibility = 'visible'; document.getElementById('miscellaneous').style.width = 'auto'; document.getElementById('miscellaneous').style.height = 'auto'; document.getElementById('miscellaneous').style.opacity = '1'; document.getElementById('collapsemisc').style.visibility = 'visible'; document.getElementById('collapsemisc').style.width = 'auto'; document.getElementById('collapsemisc').style.height = 'auto'; document.getElementById('collapsemisc').style.opacity = '1';">Miscellaneous</a></li></ul>
+        <ul class="flip-panel"><li class="flip-text"><a id="miscbutton">Miscellaneous</a></li></ul>
         <br>
-        <div id="miscellaneous" style="visibility: hidden; width: 0px; height: 0px; opacity: 0;"><h3 id="collapsemisc" style="cursor: pointer; visibility: hidden; width: 0px; height: 0px; opacity: 0;" onclick="document.getElementById('miscellaneous').style.visibility = 'hidden'; document.getElementById('miscellaneous').style.width = '0px'; document.getElementById('miscellaneous').style.height = '0px'; document.getElementById('miscellaneous').style.opacity = '0'; document.getElementById('collapsemisc').style.visibility = 'hidden'; document.getElementById('collapsemisc').style.width = '0px'; document.getElementById('collapsemisc').style.height = '0px'; document.getElementById('collapsemisc').style.opacity = '0';">Collapse</h3><br><br>
+        <div id="miscellaneous" style="visibility: hidden; width: 0px; height: 0px; opacity: 0;"><br><br>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/buttonlol">Landing Page Buttons<br><br><br><sub>various buttons used or unused that are coded in this landing page.</sub></a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/tailwind">Tailwind Playground</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/rgb">RGB</a></li></ul>
@@ -85,13 +86,5 @@
     <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/FR3QERjRXl8?si=w435XzYCMmS2yGKw" width="339px" height="602px"></iframe></center><br>
     <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/hfsVXy51pUc?si=ecP6o660lO6m4v8g" width="339px" height="602px"></iframe></center><br>
     <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/nU8fMyZDO9o?si=DofeKTnQeAGUEvJm" width="339px" height="602px"></iframe></center>
-
-
-
-
-
-
-
-
-
+    <script src="https://wither19.github.io/landing/scripts.js"></script>
 </body></html>
