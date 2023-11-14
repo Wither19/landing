@@ -25,7 +25,7 @@
         october.style.width = 'auto';
         october.style.height = 'auto';
         october.style.opacity = '1';
-        octbutton.addEventListener('click', octccollapse);
+        octbutton.addEventListener('click', octcollapse);
         octbutton.removeEventListener('click', octshow); 
 }
     function octcollapse() {
