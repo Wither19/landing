@@ -1,9 +1,9 @@
      const misc = document.getElementById('miscellaneous');
      const miscbutton = document.getElementById('miscbutton');
      const october = document.getElementById('dropdownoctober');
-     const octoberbutton = document.getElementById('october');
+     const octbutton = document.getElementById('october');
      const november = document.getElementById('dropdownnovember');
-     const novemberbutton = document.getElementById('november');
+     const novbutton = document.getElementById('november');
      function miscshow() {
         misc.style.visibility = 'visible'; 
         misc.style.width = 'auto';
