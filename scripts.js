@@ -20,7 +20,7 @@
         miscbutton.addEventListener('click', miscshow);
         miscbutton.removeEventListener('click', misccollapse);
 }
-    function octshow {
+    function octshow() {
         october.style.visibility = 'visible';
         october.style.width = 'auto';
         october.style.height = 'auto';
@@ -28,7 +28,7 @@
         octbutton.addEventListener('click', octccollapse);
         octbutton.removeEventListener('click', octshow); 
 }
-    function octcollapse {
+    function octcollapse() {
          october.style.visibility = 'hidden';
          october.style.width = '0px';
          october.style.height = '0px';
@@ -36,7 +36,7 @@
          octbutton.addEventListener('click', octshow);
          octbutton.removeEventListener('click', octcollapse);
 }
-    function novshow {
+    function novshow() {
          november.style.visibility = 'visible';
          november.style.width = 'auto';
          november.style.height = 'auto';
@@ -44,7 +44,7 @@
          novbutton.addEventListener('click', novcollapse);
          novbutton.removeEventListener('click', novshow);
 }
-    function novcollapse {
+    function novcollapse() {
          november.style.visibility = 'hidden';
          november.style.width = '0px';
          november.style.height = '0px';
