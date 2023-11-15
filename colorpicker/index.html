@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+    <style>
+        h1, h2 {
+            font-family: arial;
+        }
+        #square {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            margin: 10px auto 10px auto;
+            border: 4px outset gray;
+            border-radius: 20px;
+        }
+        #colorname {
+            padding: 10px;
+        }
+        .colors1, .colors2 {
+            margin: 20px auto 20px auto;
+            padding: 0px 0px 0px 40px;
+        }
+        button {
+            background-color: none;
+            width: 80px;
+            height: 80px;
+            margin: 10px 16px;
+            transition: 400ms;
+            border: 2px inset gray;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        button:hover {
+            transform: scale(1.1);
+            filter: brightness(0.9);
+        }
+        button:active {
+            transform: scale(0.95);
+            filter: brightness(1.1);
+            border: 4px solid lime;
+            transition: 300ms;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Color Options</h1><br><h2><span id="colorname"></span></h2></center>
+<div class="colors1"><button style="background-color: red;" onmouseover="document.getElementById('colorname').innerHTML = 'Red'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'red'"></button>
+<button style="background-color: orange;" onmouseover="document.getElementById('colorname').innerHTML = 'Orange'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'orange'"></button>
+<button style="background-color: yellow;" onmouseover="document.getElementById('colorname').innerHTML = 'Yellow'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'yellow'"></button>
+<button style="background-color: lime;" onmouseover="document.getElementById('colorname').innerHTML = 'Green'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'lime'"></button>
+<button style="background-color: blue;" onmouseover="document.getElementById('colorname').innerHTML = 'Blue'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'blue'"></button>
+<button style="background-color: mediumpurple;" onmouseover="document.getElementById('colorname').innerHTML = 'Purple'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'mediumpurple'"></button>
+<button style="background-color: pink;"  onmouseover="document.getElementById('colorname').innerHTML = 'Pink'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'pink'"></button></div>
+<div class="colors2"><button style="background-color: chocolate;"  onmouseover="document.getElementById('colorname').innerHTML = 'Brown'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'chocolate'"></button>
+<button style="background-color: white;"  onmouseover="document.getElementById('colorname').innerHTML = 'White'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'white'"></button>
+<button style="background-color: gray;"  onmouseover="document.getElementById('colorname').innerHTML = 'Gray'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'gray'"></button>
+<button style="background-color: black;"  onmouseover="document.getElementById('colorname').innerHTML = 'Black'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'black'"></button></div>
+<br><br>
+<div id="square"></div>
+<script>
+    const colorname = document.getElementById('colorname');
+    const square = document.getElementById('square');
+</script>
+</body>
+</html>
