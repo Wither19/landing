@@ -6,6 +6,9 @@
         h1, h2 {
             font-family: arial;
         }
+        li {
+          list-style-type: none;
+        }
         #square {
             width: 150px;
             height: 150px;
@@ -13,6 +16,10 @@
             margin: 10px auto 10px auto;
             border: 4px outset gray;
             border-radius: 20px;
+            transition: transform 1.75s;
+        }
+        ul li:hover #square {
+          transform: rotateY(360deg);
         }
         #colorname {
             padding: 10px;
@@ -30,6 +37,7 @@
             border: 2px inset gray;
             border-radius: 20px;
             cursor: pointer;
+            user-select: none;
         }
         button:hover {
             transform: scale(1.1);
@@ -48,6 +56,7 @@
             padding: 20px 80px;
             font-size: 36px;
             font-family: arial;
+            width: 60%;
         }
         table {
             margin: 10px auto 10px auto;
@@ -69,10 +78,7 @@
 <button style="background-color: gray;"  onmouseover="document.getElementById('colorname').innerHTML = 'Gray'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'gray'"></button>
 <button style="background-color: black;"  onmouseover="document.getElementById('colorname').innerHTML = 'Black'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'black'"></button></div>
 <br><br>
-<div id="square"></div>
-<script>
-    const colorname = document.getElementById('colorname');
-    const square = document.getElementById('square');
-</script>
+<ul><li><div id="square"></div></li></ul><br><br><br><br><br>
+<table><tr><th>Color Info</th></tr><tr><td>Hex:<span id="hex"></span></td></tr><tr><td>RGB:<span id="rgb"></span></td></tr></table><br><br><br><br>
 </body>
 </html>
