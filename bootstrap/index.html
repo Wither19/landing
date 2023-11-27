@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,6 +47,16 @@
   }
   .col-sm:hover .bi-discord {
     color: #5865F2 !important;
+  }
+  input[type="radio"] {
+    width: 28px;
+    height: 28px;
+    position: relative;
+    top: -5px;
+    left: -10px;
+  }
+  label.form-check-label {
+    font-size: 1.3em;
   }
 </style>
 <title>Bootstrap Playground</title>
@@ -99,6 +110,34 @@
 </div>
 </div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <h2 class="text-center">Radio Check Form</h2>
+<br>
+<br>
+<h3>Team Fortress 2 is:</h3>
+<br>
+<div class="form-check">
+   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+    <label class="form-check-label" for="flexRadioDefault1">
+    One of the greatest video games known to man
+  </label>
+  </div>
+  <br>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+  <label class="form-check-label" for="flexRadioDefault2">
+    Mid
+  </label>
+</div>
+</div>
+<br><br><br>
+<div class="container">
+  <h1 class="text-center">You have reached the end of the page!</h1>
+  </div>
 <script>
 // Initialize tooltips
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
