@@ -1,5 +1,6 @@
 
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,33 +21,33 @@
     width: 0%;
     transition: 1.5s ease-out !important;
   }
-  .bi {
+  .col-sm .bi {
     font-size: 3.5em ;
-    display: inline-block !important;
+    display: inherit !important;
     transition: 300ms !important;
     color: black !important;
   }
-  .bi:hover {
+  .col-sm:hover .bi {
     transform: translate(0px, 4px) !important;
   }
-  .bi-xbox:hover {
+  .col-sm:hover .bi-xbox {
     color: green !important;
   }
-  .bi-nintendo-switch:hover {
+  .col-sm:hover .bi-nintendo-switch {
     color: red !important;
   }
-  .bi-playstation {
+  .col-sm .bi-playstation {
     font-size: 4em;
     position: relative;
     top:-5px;
   }
-  .bi-playstation:hover {
+  .col-sm:hover .bi-playstation {
     color: darkblue !important;
   }
-  .bi-steam:hover {
+  .col-sm:hover .bi-steam {
     color: #2a375e !important;
   }
-  .bi-discord:hover {
+  .col-sm:hover .bi-discord {
     color: #5865F2 !important;
   }
 </style>
@@ -84,14 +85,20 @@
   <h2 class="text-center">Icons (with tooltips)</h2>
 <br><br>
 <div class="row">
-<div class="col-sm"><i class="bi bi-xbox text-center" data-bs-toggle="tooltip" title="Xbox"></i></div>
-<div class="col-sm"><i class="bi bi-nintendo-switch text-center" data-bs-toggle="tooltip" title="Nintendo"></i></div>
-<div class="col-sm"><i class="bi bi-playstation" data-bs-toggle="tooltip" title="PlayStation"></i></div>
-<div class="col-sm"><i class="bi bi-steam" data-bs-toggle="tooltip" title="Steam"></i></div>
-<br>
-<br>
-<div class="row">
-  <div class="col-sm text-center"><i class="bi bi-discord" data-bs-toggle="tooltip" title="Discord"></i></div>
+<div class="col-sm" data-bs-toggle="tooltip" title="Xbox">
+  <i class="bi bi-xbox text-center"></i>
+</div>
+<div class="col-sm" data-bs-toggle="tooltip" title="Nintendo">
+  <i class="bi bi-nintendo-switch text-center"></i>
+</div>
+<div class="col-sm" data-bs-toggle="tooltip" title="PlayStation">
+  <i class="bi bi-playstation text-center"></i>
+</div>
+<div class="col-sm" data-bs-toggle="tooltip" title="Steam">
+  <i class="bi bi-steam text-center"></i>
+</div>
+<div class="col-sm" data-bs-toggle="tooltip" title="Discord">
+  <i class="bi bi-discord text-center"></i>
 </div>
 </div>
 </div>
