@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,49 +50,77 @@
     color: #5865F2 !important;
   }
   .soc {
-    width: 60%;
+    width: 45%;
     border-radius: 12px;
     padding: 10px;
-    transition: 200ms;
-    margin: 10px auto 10px auto;
+    transition: 180ms;
+    margin: 30px auto 30px auto;
+    filter: drop-shadow(0px 20px 12px gray);
   }
   .soc:hover {
     transform: translate(0px, -2px);
-    padding: 14px;
   }
-  .soc span {
-    color: lightgray;
-    font-size: 3em;
-    position: relative;
-    top: -8px;
-    left: 50%;
+  .soc:active {
+    transform: translate(0px, 2px);
   }
   .soc i {
     color: white;
-    font-size: 5em;
-    position: relative;
-    top: 6px;
-    left: 20%;
+    font-size: 6.5em;
   }
   .xbox {
     background-color: green;
     border: green solid 1px;
+    box-shadow: 0px 10px darkgreen;
+  }
+  .xbox:hover {
+    box-shadow: 0px 16px darkgreen;
+  }
+  .xbox:active {
+    box-shadow: 0px 8px darkgreen;
   }
   .nintendo {
     background-color: red;
     border: red solid 1px;
+    box-shadow: 0px 10px #D22B2B;
+  }
+  .nintendo:hover {
+    box-shadow: 0px 16px #D22B2B;
+  }
+  .nintendo:active {
+    box-shadow: 0px 8px #D22B2B;
   }
   .playstation {
     background-color: darkblue;
     border: darkblue solid 1px;
+    box-shadow: 0px 10px #030366;
+  }
+  .playstation:hover {
+    box-shadow: 0px 16px #030366;
+  }
+  .playstation:active {
+    box-shadow: 0px 8px #030366;
   }
   .steam {
     background-color: #2a375e;
     border: #2a375e solid 1px;
+    box-shadow: 0px 10px;
+  }
+  .steam:hover {
+    box-shadow: 0px 16px;
+  }
+  .steam:active {
+    box-shadow: 0px 8px;
   }
   .discord {
     background-color: #5865F2;
     border: #5865F2 solid 1px;
+    box-shadow: 0px 10px #414aab;
+  }
+  .discord:hover {
+    box-shadow: 0px 16px #414aab;
+  }
+  .discord:active {
+    box-shadow: 0px 8px #414aab;
   }
   input[type="radio"] {
     width: 28px;
@@ -159,15 +188,15 @@
 <br>
 <br>
 <br>
-<div class="container">
+<div class="container text-center">
   <h2 class="text-center">Alt Icons</h2>
   <br>
   <br>
-  <div class="soc xbox"><i class="bi bi-xbox text-center"></i><span>Xbox</span></div>
-  <div class="soc nintendo"><i class="bi bi-nintendo-switch text-center"></i><span>Switch</span></div>
-  <div class="soc playstation"><i class="bi bi-playstation text-center"></i><span>PS4</span></div>
-  <div class="soc steam"><i class="bi bi-steam text-center"></i><span>Steam</span></div>
-  <div class="soc discord"><i class="bi bi-discord text-center"></i><span>Discord</span></div>
+  <div class="soc xbox"><i class="bi bi-xbox text-center"></i></div>
+  <div class="soc nintendo"><i class="bi bi-nintendo-switch text-center"></i></div>
+  <div class="soc playstation"><i class="bi bi-playstation text-center"></i></div>
+  <div class="soc steam"><i class="bi bi-steam text-center"></i></div>
+  <div class="soc discord"><i class="bi bi-discord text-center"></i></div>
 </div>
 <br>
 <br>
