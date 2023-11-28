@@ -1,3 +1,4 @@
+
 <html><head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -56,6 +57,8 @@
     transition: 180ms;
     margin: 30px auto 30px auto;
     filter: drop-shadow(0px 20px 12px gray);
+    cursor: pointer;
+    user-select: none;
   }
   .soc:hover {
     transform: translate(0px, -2px);
@@ -144,6 +147,34 @@
   .twitter:active {
     box-shadow: 0px 8px #0c85d0;
   }
+  .one {
+    background-color: slateblue;
+    border: slateblue solid 1px;
+    box-shadow: 0px 10px darkslateblue;
+    color: white;
+    font-size: 36px;
+    width: 80%;
+    }
+  .one:hover {
+    box-shadow: 0px 16px darkslateblue;
+  }
+  .one:active {
+    box-shadow: 0px 8px darkslateblue;
+  }
+  .two {
+    background-color: #ffd700;
+    border: #ffd700 solid 1px;
+    box-shadow: 0px 10px #b09502;
+    color: white;
+    font-size: 36px;
+    width: 80%;
+    }
+  .two:hover {
+    box-shadow: 0px 16px #b09502;
+  }
+  .two:active {
+    box-shadow: 0px 8px #b09502;
+  }
   input[type="radio"] {
     width: 28px;
     height: 28px;
@@ -223,6 +254,20 @@
   <a target="_blank" href="https://discord.com/"><div class="soc discord"><i class="bi bi-discord text-center"></i></div></a>
   <div class="soc facebook"><i class="bi bi-facebook text-center"></i></div>
   <div class="soc twitter"><i class="bi bi-twitter text-center"></i></div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="container text-center">
+  <div class="row">
+    <div class="col-sm text-center">
+      <div class="soc one text-center">Button 1</div>
+    </div>
+    <div class="col-sm">
+      <div class="soc two text-center">Button 2</div>
+    </div>
+  </div>
 </div>
 <br>
 <br>
