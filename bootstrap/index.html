@@ -103,13 +103,13 @@
   .steam {
     background-color: #2a375e;
     border: #2a375e solid 1px;
-    box-shadow: 0px 10px;
+    box-shadow: 0px 10px black;
   }
   .steam:hover {
-    box-shadow: 0px 16px;
+    box-shadow: 0px 16px black;
   }
   .steam:active {
-    box-shadow: 0px 8px;
+    box-shadow: 0px 8px black;
   }
   .discord {
     background-color: #5865F2;
@@ -157,7 +157,7 @@
 </style>
 <title>Bootstrap Playground</title>
 </head>
-<body>
+<body data-new-gr-c-s-check-loaded="14.1141.0" data-gr-ext-installed="">
 <div class="container text-center">
   <h1>A decent Bootstrap Website</h1><br><br><br>
   <h2>Columns</h2>
@@ -214,11 +214,13 @@
   <h2 class="text-center">Alt Icons</h2>
   <br>
   <br>
-  <div class="soc xbox"><i class="bi bi-xbox text-center"></i></div>
-  <div class="soc nintendo"><i class="bi bi-nintendo-switch text-center"></i></div>
+  <a target="_blank" href="https://www.xbox.com/en-US/"><div class="soc xbox">
+  <i class="bi bi-xbox text-center"></i></div></a>
+  <a target="_blank" href="https://www.nintendo.com/us/"><div class="soc nintendo">
+  <i class="bi bi-nintendo-switch text-center"></i></div></a>
   <div class="soc playstation"><i class="bi bi-playstation text-center"></i></div>
-  <div class="soc steam"><i class="bi bi-steam text-center"></i></div>
-  <div class="soc discord"><i class="bi bi-discord text-center"></i></div>
+  <a target="_blank" href="https://store.steampowered.com/"><div class="soc steam"><i class="bi bi-steam text-center"></i></div></a>
+  <a target="_blank" href="https://discord.com/"><div class="soc discord"><i class="bi bi-discord text-center"></i></div></a>
   <div class="soc facebook"><i class="bi bi-facebook text-center"></i></div>
   <div class="soc twitter"><i class="bi bi-twitter text-center"></i></div>
 </div>
@@ -259,4 +261,5 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 </script>
 
 
-</body></html>
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
