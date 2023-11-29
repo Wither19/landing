@@ -15,18 +15,14 @@
     <h1>Two options</h1>
   <div class="row">
   <div class="col-xs-6">
-  <div onclick="document.getElementById('alert1').innerHTML = 'is good'; document.getElementById('alert1').display = 'block'; document.getElementById('alert2').display = 'none';" data-btn-type="purple">option 1</div>
+  <div onclick="document.getElementById('alert').classList.replace('alert-info', 'alert-success'); document.getElementById('alert').classList.replace('alert-danger', 'alert-success'); document.getElementById('alert').innerHTML = '<b>Correct!</b><br><br> <q>is good.</q> <br><br> <b>- Heavy Weapons Guy</b>';" data-btn-type="purple">option 1</div>
   </div>
   <div class="col-xs-6">
-  <div onclick="document.getElementById('alert2').innerHTML = 'very bad'; document.getElementById('alert2').display = 'block'; document.getElementById('alert1').display = 'none';" data-btn-type="gold">option 2</div>
+  <div onclick="document.getElementById('alert').classList.replace('alert-info', 'alert-danger'); document.getElementById('alert').classList.replace('alert-success', 'alert-danger'); document.getElementById('alert').innerHTML = '<b>Incorrect!</b><br><br> <q>very bad.</q> <br><br> <b>- Heavy Weapons Guy</b>';" data-btn-type="gold">option 2</div>
   </div>
   </div>
-    <div id="alert1" style="display: none;" class="alert alert-success"></div>
-    <div id="alert2" style="display: none;" class="alert alert-danger"></div>
+  <br>
+    <div id="alert" style="opacity: 1;" class="alert alert-info"><b id="bold">Awaiting an answer...</b> Click the correct answer.</div>
   </div>
-  <script>
-    const alert1 = "document.getElementById('alert1')";
-    const alert2 = "document.getElementById('alert2')";
-  </script>
 </body>
 </html>
