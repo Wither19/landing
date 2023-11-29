@@ -15,10 +15,10 @@
     <h1>Two options</h1>
   <div class="row">
   <div class="col-xs-6">
-  <div onclick="alert1.innerHTML = 'is good'; alert1.display = 'block'; alert2.display = 'none';"" data-btn-type="purple;">option 1</div>
+  <div onclick="document.getElementById('alert1').innerHTML = 'is good'; document.getElementById('alert1').display = 'block'; document.getElementById('alert2').display = 'none';" data-btn-type="purple">option 1</div>
   </div>
   <div class="col-xs-6">
-  <div onclick="alert2.innerHTML = 'very bad'; alert2.display = 'block'; alert1.display = 'none';"" data-btn-type="gold">option 2</div>
+  <div onclick="document.getElementById('alert2').innerHTML = 'very bad'; document.getElementById('alert2').display = 'block'; document.getElementById('alert1').display = 'none';" data-btn-type="gold">option 2</div>
   </div>
   </div>
     <div id="alert1" style="display: none;" class="alert alert-success"></div>
