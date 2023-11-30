@@ -8,7 +8,7 @@ october > *, november > * {
   animation: none;
 }
   h1, h2, h3 {
-        animation: float 6s linear infinite;
+        animation: float 4s linear infinite;
     }
     @keyframes float {
         0% {
