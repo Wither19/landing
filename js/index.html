@@ -7,15 +7,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
   <style>
-  .draggable {
+  body .draggable {
     width: 300px;
     height: 400px;
+    user-select: none;
+    cursor: pointer;
+  }
+  body .draggable:nth-child(1) {
     background: skyblue;
   }
-  .draggable input {
+  body .draggable:nth-child(2) {
+    background-color: salmon;
+  }
+  body .draggable input {
     border: 0px;
     outline: 0px;
-    font-size: 24px;
+    font-size: 32px;
+    width: 90%;
+    background: inherit;
+    position: relative;
+    top: 5%;
+    text-align: center;
+    user-select: auto !important;
   }
   </style>
 </head>
@@ -23,8 +36,13 @@
   <div class="draggable">
     <input type="text" value="blank slate...">
   </div>
+   <div class="draggable">
+    <input type="text" value="blank slate...">
+  </div>
   <script>
-    
+    $( function() {
+    $( ".draggable" ).draggable();
+  } );
   </script>
 </body>
 </html>
