@@ -2,12 +2,47 @@
 <html>
 <title>Online HTML Editor</title>
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <style>
+    div i {
+      font-size: 84px;
+      width: 100px;
+      height: 100px;
+      color: white;
+    }
+    div i.bi-chevron-up {
+      background-color: yellow;
+    }
+    div i.bi-chevron-down {
+      background-color: slateblue;
+    }
+    #btn {
+      font-size: 25px;
+      background-color: blue;
+      color: white;
+      width: 12%;
+    }
+    #btn.upstate::before {
+      content: "Up";
+    }
+    #btn.downstate::before {
+      content: "Down";
+    }
+  </style>
 </head>
 <body>
-<div id="text" style="font-size: 48px;">f</div>
-<script>
-$("#text").html("pootis");
-</script>
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <div><i id="down-arrow" class="bi bi-chevron-up"></i></div>
+  <button id="btn" class="upstate"></button>
+  <script>
+    $('#btn').click(function(){
+        $('#down-arrow').toggleClass('bi-chevron-up');
+        $('#down-arrow').toggleClass('bi-chevron-down');
+    });
+    $('#btn').click(function(){
+        $('#btn').toggleClass('upstate');
+        $('#btn').toggleClass('downstate');
+    });
+  </script>
 </body>
 </html>
