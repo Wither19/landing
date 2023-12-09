@@ -1,9 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 <title>Online HTML Editor</title>
 <head>
     <link href="https://fonts.cdnfonts.com/css/tf2-build" rel="stylesheet">
-                
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <style>
     body {
       background-image:url(https://wither19.github.io/landing/docs/assets/images/pl_upward.jpg);
@@ -45,7 +48,7 @@
          font-family: 'TF2 Build', sans-serif;
          width: 75%; 
          margin: 10px auto 10px auto;
-         transition: 400ms;
+         transition: 200ms;
         }
 @media screen and (orientation: portrait) {
       body {
@@ -58,12 +61,24 @@
       body > * {
           display: none;
       }
-    }    
+    }
+    .show {
+        opacity: 1;
+        
+    }
+    .hide {
+        opacity: 0;
+    }
     </style>
 </head>
 <body>
   <a href="https://wither19.github.io" class="stickybutton">Back</a>
-<div onclick="document.getElementById('content').style.opacity = '1'; document.getElementById('content').style.transform = 'scale(1)'; document.getElementById('content').style.height = 'auto'">map name<h3>gamemode</h3><h3>click this box to view content!</h3></div>
-<div id="content" style="opacity: 0; transform: scale(0); height: 0px;" onclick="document.getElementById('content').style.opacity = '0'; document.getElementById('content').style.transform = 'scale(0)'; document.getElementById('content').style.height = '0px'">Content</div>
+<div id="button">Upward<h3>Payload</h3><h3>click this box to view content!</h3></div>
+<div class="hide" id="content">Content</div>
+<script>
+    $("#button").click(function(){
+    $("#content").toggleClass("hide show");
+  });
+</script>
 </body>
 </html>
