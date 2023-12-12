@@ -98,9 +98,10 @@
 
 
 <script>
-var windows = document.getElementsByClassName('.window');
-new simpleParallax(windows, {
-  orientation: 'up'
+var image = document.getElementsByClassName('window');
+new simpleParallax(image, {
+  overflow: true,
+  orientation: 'right'
 });
 </script>
 </body></html>
