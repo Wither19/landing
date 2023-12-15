@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+<style>
+  body {
+  }
+  div {
+    background: blue;
+    height: 200px;
+    width: 200px;
+    margin: 10px auto;
+    position: relative;
+  }
+  button {
+    font-size: 64px;
+    position: relative;
+  }
+  #up {
+    top: 200px;
+    left: 101px;
+  }
+  #down {
+    top: 285px;
+    left: 18px;
+  }
+  #left {
+    top: 285px;
+    left: -149px;
+  }
+  #right {
+    top: 285px;
+    left: -64px;
+  }
+</style>
+</head>
+<body>
+<div></div>
+<button id="up"><i class="bi bi-caret-up-fill"></i></button>
+<button id="down"><i class="bi bi-caret-down-fill"></i></button>
+<button id="left"><i class="bi bi-caret-left-fill"></i></button>
+<button id="right"><i class="bi bi-caret-right-fill"></i></button>
+<script>
+$("#up").click(function(){
+  $("div").css(
+    {
+  "top": "-=100px"
+  });
+});
+$("#down").click(function(){
+  $("div").css(
+    {
+  "top": "+=100px"
+  });
+});
+$("#left").click(function(){
+  $("div").css(
+    {
+  "left": "-=100px"
+  });
+});
+$("#right").click(function(){
+  $("div").css(
+    {
+  "left": "+=100px"
+  });
+});
+$(document).keydown(function(e) { 
+  if (e.which == "38") {  
+    $("div").css({ 
+      "top": "-=100px" 
+      }); 
+    } 
+});
+$(document).keydown(function(e) { 
+  if (e.which == "40") {  
+    $("div").css({ 
+      "top": "+=100px" 
+      }); 
+    } 
+}); 
+$(document).keydown(function(e) { 
+  if (e.which == "37") {  
+    $("div").css({ 
+      "left": "-=100px" 
+      }); 
+    } 
+}); 
+$(document).keydown(function(e) { 
+  if (e.which == "39") {  
+    $("div").css({ 
+      "left": "+=100px" 
+      }); 
+    } 
+}); 
+</script>
+</body>
+</html>
