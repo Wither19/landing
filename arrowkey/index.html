@@ -13,10 +13,12 @@
     width: 200px;
     margin: 10px auto;
     position: relative;
+    transition: 0.1s;
   }
   button {
     font-size: 64px;
     position: relative;
+    display: inline;
   }
   #up {
     top: 200px;
@@ -95,6 +97,20 @@ $(document).keydown(function(e) {
       }); 
     } 
 }); 
+$(document).keydown(function(e) { 
+  if (e.which == "49") {  
+    $("button").css({ 
+      "display": "none" 
+      }); 
+    } 
+});
+$(document).keydown(function(e) { 
+  if (e.which == "50") {  
+    $("button").css({ 
+      "display": "inline" 
+      }); 
+    } 
+});
 </script>
 </body>
 </html>
