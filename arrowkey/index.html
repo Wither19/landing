@@ -7,9 +7,8 @@
 <style>
   body {
   }
-  div {
-    background: blue;
-    height: 200px;
+  #heavy {
+    height: 250px;
     width: 200px;
     margin: 10px auto;
     position: relative;
@@ -18,7 +17,7 @@
   button {
     font-size: 64px;
     position: relative;
-    display: inline;
+    display: none;
   }
   #up {
     top: 200px;
@@ -39,61 +38,65 @@
 </style>
 </head>
 <body>
-<div></div>
+<img id="heavy" src="https://media.tenor.com/JHa1sk7FONkAAAAi/heavy-time-to-dance-conga-tf2.gif">
 <button id="up"><i class="bi bi-caret-up-fill"></i></button>
 <button id="down"><i class="bi bi-caret-down-fill"></i></button>
 <button id="left"><i class="bi bi-caret-left-fill"></i></button>
 <button id="right"><i class="bi bi-caret-right-fill"></i></button>
 <script>
 $("#up").click(function(){
-  $("div").css(
+  $("#heavy").css(
     {
-  "top": "-=100px"
+  "top": "-=25"
   });
 });
 $("#down").click(function(){
-  $("div").css(
+  $("#heavy").css(
     {
-  "top": "+=100px"
+  "top": "+=25"
   });
 });
 $("#left").click(function(){
-  $("div").css(
+  $("#heavy").css(
     {
-  "left": "-=100px"
+  "left": "-=25",
+  "transform": "rotateY(0deg)" 
   });
 });
 $("#right").click(function(){
-  $("div").css(
+  $("#heavy").css(
     {
-  "left": "+=100px"
+  "left": "+=25",
+  "transform": "rotateY(180deg)"
   });
 });
 $(document).keydown(function(e) { 
   if (e.which == "38") {  
-    $("div").css({ 
-      "top": "-=100px" 
+    $("#heavy").css({ 
+      "top": "-=25" 
       }); 
     } 
 });
 $(document).keydown(function(e) { 
   if (e.which == "40") {  
-    $("div").css({ 
-      "top": "+=100px" 
+    $("#heavy").css({ 
+      "top": "+=25" 
       }); 
     } 
 }); 
 $(document).keydown(function(e) { 
   if (e.which == "37") {  
-    $("div").css({ 
-      "left": "-=100px" 
+    $("#heavy").css({ 
+      "left": "-=25",
+      "transform": "rotateY(0deg)" 
       }); 
     } 
 }); 
 $(document).keydown(function(e) { 
   if (e.which == "39") {  
-    $("div").css({ 
-      "left": "+=100px" 
+    $("#heavy").css({ 
+      "left": "+=25",
+      "transform": "rotateY(180deg)" 
       }); 
     } 
 }); 
