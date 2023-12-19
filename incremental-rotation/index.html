@@ -30,24 +30,6 @@ button {
     <button class="b"><</button>
     <button class="f">></button><br><br><br><br><br><br><br><br>
     <div id="follow"></div>
-<script>
-var degrees = 0;
-$(document).ready(function(){
-    $(".f").click(function(){
-        degrees += 90;
-        $("#follow").css({
-            "transform": "rotateZ(" + degrees + "deg)"
-        });
-    });
-});
-$(document).ready(function(){
-    $(".b").click(function(){
-        degrees -= 90;
-        $("#follow").css({
-            "transform": "rotateZ(" + degrees + "deg)"
-        });
-    });
-});
-</script>
+<script src="https://wither19.github.io/landing/incremental-rotation/scripts.js"></script>
 </body>
 </html>
