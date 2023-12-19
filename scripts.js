@@ -4,7 +4,7 @@
            $("november").click(function(){
               $("#dropdownnovember").toggleClass("nah show"); 
            });
-           $("shortcuts").click(function(){
+           $("#shortcuts").click(function(){
               $("#dropdownshortcuts").toggleClass("nah show"); 
            });
         $(document).keydown(function(e){
