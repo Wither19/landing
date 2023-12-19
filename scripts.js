@@ -1,9 +1,9 @@
-     const misc = document.getElementById('miscellaneous');
-     const miscbutton = document.getElementById('miscbutton');
-     const october = document.getElementById('dropdownoctober');
-     const octbutton = document.getElementById('october');
-     const november = document.getElementById('dropdownnovember');
-     const novbutton = document.getElementById('november');
+     misc = document.getElementById('miscellaneous');
+     miscbutton = document.getElementById('miscbutton');
+     october = document.getElementById('dropdownoctober');
+     octbutton = document.getElementById('october');
+     november = document.getElementById('dropdownnovember');
+     novbutton = document.getElementById('november');
      function miscshow() {
         misc.style.visibility = 'visible'; 
         misc.style.width = 'auto';
