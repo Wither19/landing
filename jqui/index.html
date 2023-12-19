@@ -15,27 +15,11 @@
       height: 200px;
     }
   </style>
-  <script>
-  $( function() {
-$( "#datepicker" ).datepicker({
-  showAnim: "blind",
-  onSelect: function (date, datepicker) { 
-    if (date != "") { 
-  $("#text").html("The date selected is: " + date); 
-      }
-  } 
-});
-});
-$( function() {
-    $( "#grid" ).draggable({ grid: [ 40, 40 ] });
-    $( "#yaxis" ).draggable({ axis: "y" });
-  });
-  </script>
+  <script src="https://wither19.github.io/landing/jqui/scripts.js"></script>
 </head>
 <body>
 <p>Date: <input type="text" id="datepicker" size="45"></p>
 <p id="text"></p>
 <div class="drag" id="grid">I adhere to a 40 x 40 grid!</div>
-<div class="drag" id="yaxis">I only move on the y-axis!</div>
 </body>
 </html>
