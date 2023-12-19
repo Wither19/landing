@@ -1,6 +1,4 @@
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <title>Landing Page!</title>
 <link rel="stylesheet" href="https://wither19.github.io/landing/style.css">
 <link rel="stylesheet" media="screen and (orientation: portrait)" href="https://wither19.github.io/landing/style-mobile.css" <link="">
@@ -12,14 +10,21 @@
 <link href="https://fonts.cdnfonts.com/css/tf2-build" rel="stylesheet">
 <link href="https://fonts.cdnfonts.com/css/new-super-mario-font-u" rel="stylesheet">        
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
-<style type="text/css" id="operaUserStyle"></style></head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<style>
+    .nah {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+</style>
+</head>
 <body>
-    <h1 id="top">Welcome to my domain</h1>  
+    <h1 id="top">Welcome to my domain<br><sub>(Now with JQuery)</sub></h1> 
     <br>
     <h2>Navigation</h2>
-    <br>
-    <br>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/homepageproject">Homepage Project</a></li></ul>
+    <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/homepageproject">Homepage Project</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/parable">Prodigal Son Web Design Project</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/calvarychemnotes">Chemistry Notes</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/demoknightcss">Demoknight CSS</a></li></ul>
@@ -31,33 +36,11 @@
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/arrowkey">Arrow Keydown JQuery thing<br><br><sub><kbd>ctrl</kbd> and <kbd>alt</kbd> - toggle virtual controls<br>Use the number keys to toggle between classes.</sub></a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/buttonlol">Landing Page Buttons</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/bootstrap">Bootstrap Playground</a></li></ul>
-        
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/colorpicker">Color Picker JS Project</a></li></ul>
-        
-        
-        <sub>*Note that these are tiny side projects for my experimentation and for me to learn, and that they may not be mobile-compatible (or interesting).</sub>
-    <br>
-    <br>
-    <center>
-    <a class="windowlink !important" href="https://wither19.github.io/landing/pl_upward/"><div class="pl_upward window"><span class="windowtext"><h1>Upward</h1><br><h3>Payload</h3><br><br><br><br><br><br><br><br><br><br><br><br><br></span></div></a>
-      </center>
-    <br>
-    <br>
-    <h1>Music Pick Of The Week</h1>
-    <br>
-    <center><iframe class="youtube-regular-mobile" width="748px" height="420px" src="https://www.youtube.com/embed/rBdQDGGNg8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></center> 
-    <br>
-    <h1>Drunken Pipe Bomb from Team Fortress 2</h1>
-    <br>
-    <br>
-    <div>As with Mercenary Park, it's not bad, but when compared to some of the gems in Fight Songs, it doesn't hit as hard. The bagpipes towards the end add some real charm.<br><br><span class="eloquentdemomanquote">LET'S DO ITTTTT!!!!!</span></div>
-    <br>
-    <a class="windowlink !important" href="https://wither19.github.io/landing/ctf_2fort/"><div class="ctf_2fort window"><span class="windowtext"><h1>2fort</h1><br><h3>capture the flag</h3><br><br><br><br><br><br><br><br><br><br><br><br><br></span></div></a>
-    
-    <div class="antilag"><h1>Scripture</h1><br>
-    <h2><october style="position:relative; cursor:pointer;" onclick="document.getElementById('dropdownoctober').style.visibility = 'visible'; document.getElementById('dropdownoctober').style.width = 'auto'; document.getElementById('dropdownoctober').style.height = 'auto'; document.getElementById('dropdownoctober').style.opacity = '1'; document.getElementById('collapseoctober').style.visibility = 'visible'; document.getElementById('collapseoctober').style.width = 'auto'; document.getElementById('collapseoctober').style.height = 'auto'; document.getElementById('collapseoctober').style.opacity = '1';">October 2023</october></h2>
-    <h3 id="collapseoctober" style="cursor: pointer; width: auto; height: auto; opacity: 0; visibility: hidden;" onclick="document.getElementById('dropdownoctober').style.visibility = 'hidden'; document.getElementById('dropdownoctober').style.width = '0px'; document.getElementById('dropdownoctober').style.height = '0px'; document.getElementById('dropdownoctober').style.opacity = '0'; document.getElementById('collapseoctober').style.visibility = 'hidden'; document.getElementById('collapseoctober').style.opacity = '0';">collapse</h3>
-    <h2 id="dropdownoctober" style="visibility: hidden; width: 0px; height: 0px; opacity: 0;">
+        <br><br>
+        <div class="antilag"><h1>Scripture</h1><br>
+    <h2><october style="position:relative; cursor:pointer;">October 2023</october></h2>
+    <h2 id="dropdownoctober" class="nah">
     <br>
     <a id="scroctlink1" target="_blank" href="https://www.bible.com/bible/111/1CO.13.4-8.NIV"><scripture><sub id="scroct1"><sup>4</sup> Love is patient, love is kind. It does not envy, it does not boast, it is not proud. <sup>5</sup> It does not dishonor others, it is not self-seeking, it is not easily angered, it keeps no record of wrongs. <sup>6</sup> Love does not delight in evil but rejoices with the truth. <sup>7</sup> It always protects, always trusts, always hopes, always perseveres. <sup>8</sup> Love never fails. <br><br><br></sub>1 Corinthians 13:4-8 NIV</scripture></a>
     <br>
@@ -68,9 +51,8 @@
     <a id="scroctlink4" target="_blank" href="https://www.bible.com/bible/111/JAS.1.19-20.NIV"><scripture><sub id="scroct4"><sup>19</sup> My dear brothers and sisters, take note of this: Everyone should be quick to listen, slow to speak and slow to become angry, <sup>20</sup> because human anger does not produce the righteousness that God desires. <br><br><br></sub>James 1:19-20 NIV</scripture></a>
     <br>
     </h2>
-    <h2><november style="position:relative; cursor:pointer;" onclick="document.getElementById('dropdownnovember').style.visibility = 'visible'; document.getElementById('dropdownnovember').style.width = 'auto'; document.getElementById('dropdownnovember').style.height = 'auto'; document.getElementById('dropdownnovember').style.opacity = '1'; document.getElementById('collapsenovember').style.visibility = 'visible'; document.getElementById('collapsenovember').style.width = 'auto'; document.getElementById('collapsenovember').style.height = 'auto'; document.getElementById('collapsenovember').style.opacity = '1';">November 2023</november></h2>
-    <h3 id="collapsenovember" style="cursor: pointer; width: auto; height: auto; opacity: 0; visibility: hidden;" onclick="document.getElementById('dropdownnovember').style.visibility = 'hidden'; document.getElementById('dropdownnovember').style.width = '0px'; document.getElementById('dropdownnovember').style.height = '0px'; document.getElementById('dropdownnovember').style.opacity = '0'; document.getElementById('collapsenovember').style.visibility = 'hidden'; document.getElementById('collapsenovember').style.opacity = '0';">collapse</h3>
-    <h2 id="dropdownnovember" style="visibility: hidden; width: 0px; height: 0px; opacity: 0;">
+    <h2><november style="position:relative; cursor:pointer;">November 2023</november></h2>
+    <h2 id="dropdownnovember" class="nah">
     <br>
     <a id="scrnovlink1" target="_blank" href="https://www.bible.com/bible/111/LUK.15.21-24.NIV"><scripture><sub id="scrnov1"> <sup>21</sup> “The son said to him, ‘Father, I have sinned against heaven and against you. 
         I am no longer worthy to be called your son.’ <sup>22</sup> “But the father said to his servants, ‘Quick! Bring the best robe and put it on him. 
@@ -79,33 +61,16 @@
     <br>
         <a id="scrnovlink2" target="_blank" href="https://www.bible.com/bible/111/ROM.5.3-5.NIV"><scripture><sub id="scrnov2"> <sup>3</sup> Not only so, but we also glory in our sufferings, because we know that suffering produces perseverance; <sup>4</sup> perseverance, character; and character, hope. <sup>5</sup> And hope does not put us to shame, because God’s love has been poured out into our hearts through the Holy Spirit, who has been given to us.
         <br><br><br></sub>Romans 5:3-5 NIV</scripture></a>
-    <br>
-    </h2></div>
-    <a class="windowlink !important" href="https://wither19.github.io/landing/cp_process/"><div class="cp_process window"><span class="windowtext"><h1>Process</h1><br><h3>Control Points</h3><br><br><br><br><br><br><br><br><br><br><br><br><br></span></div></a>
-    <br>
+            <br>
+            <hr>
+            <br>
     <h1>Funny Videos</h1>
     <br>
     <br>
-    <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/KwVcNTBdYks?si=Dy5pSOO2-UaPq1ZP" width="339px" height="602px"></iframe></center><br>
-    <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/bDMqNYDoTVU?si=bSbSOhWf2iVQwA59" width="339px" height="602px"></iframe></center><br>
-    <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/FR3QERjRXl8?si=w435XzYCMmS2yGKw" width="339px" height="602px"></iframe></center><br>
-    <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/hfsVXy51pUc?si=ecP6o660lO6m4v8g" width="339px" height="602px"></iframe></center><br>
-    <center><iframe class="youtubeshortsmobile" src="https://youtube.com/embed/nU8fMyZDO9o?si=DofeKTnQeAGUEvJm" width="339px" height="602px"></iframe></center>
-
-
-
-
-
-
-
-
-
-
-<script>
-var image = document.getElementsByClassName('window');
-new simpleParallax(image, {
-  overflow: true,
-  orientation: 'right'
-});
-</script>
-</body></html>
+    <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/KwVcNTBdYks?si=Dy5pSOO2-UaPq1ZP" width="226px" height="400px"></iframe>
+    <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/bDMqNYDoTVU?si=bSbSOhWf2iVQwA59" width="226px" height="400px"></iframe>
+    <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/FR3QERjRXl8?si=w435XzYCMmS2yGKw" width="226px" height="400px"></iframe>
+    <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/hfsVXy51pUc?si=ecP6o660lO6m4v8g" width="226px" height="400px"></iframe>
+    <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/nU8fMyZDO9o?si=DofeKTnQeAGUEvJm" width="226px" height="400px"></iframe>
+    <script src="https://wither19.github.io/landing/scripts.js"></script>
+   </body></html>
