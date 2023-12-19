@@ -1,8 +1,12 @@
-<html><head><title>JS-Based Color Picker</title>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <title>JS-Based Color Picker</title>
 
     <style>
         h1, h2 {
             font-family: arial;
+            text-align: center;
         }
         li {
           list-style-type: none;
@@ -101,27 +105,85 @@
         #optionscollapse:active {
         background-color: lightskyblue;
         color: white;
-        }</style>
+        }
+        .show {
+            display: block;
+        }
+        .nah {
+            display: none;
+        }
+        </style>
 <style type="text/css" id="operaUserStyle"></style></head>
 <body>
-    <center><h1 class="options" onclick="document.getElementById('optionscollapse').style.height = 'auto'; document.getElementById('optionsdropdown').style.height = 'auto'; document.getElementById('colors1').style.height = 'auto'; document.getElementById('colors2').style.height = 'auto'; document.getElementById('colornames').style.opacity = '1';">Color Options</h1>
-</center><br><center><button id="optionscollapse" style="font-size: 20px; font-weight: 700; opacity: 1; height: auto;" onclick="document.getElementById('optionscollapse').style.height = '0px'; document.getElementById('optionsdropdown').style.height = '0px'; document.getElementById('colors1').style.height = '0px'; document.getElementById('colors2').style.height = '0px'; document.getElementById('colornames').style.opacity = '0';">Collapse</button></center><h2><span id="colorname"></span></h2>
-<span id="optionsdropdown" style="opacity: 1; height: auto;"><div id="colors1" class="colors1" style="height: auto;">
-<button tabindex="1" style="background-color: red;" onmouseover="document.getElementById('colorname').innerHTML = 'Red'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'red'; document.getElementById('hex').innerHTML = '#FF0000'; document.getElementById('rgb').innerHTML = '(255, 0, 0)'"></button>
-<button tabindex="2" style="background-color: orange;" onmouseover="document.getElementById('colorname').innerHTML = 'Orange'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'orange'; document.getElementById('hex').innerHTML = '#FFA500'; document.getElementById('rgb').innerHTML = '(255, 165, 0)'"></button>
-<button tabindex="3" style="background-color: yellow;" onmouseover="document.getElementById('colorname').innerHTML = 'Yellow'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'yellow'; document.getElementById('hex').innerHTML = '#FFFF00'; document.getElementById('rgb').innerHTML = '(255, 255, 0)'"></button>
-<button tabindex="4" style="background-color: lime;" onmouseover="document.getElementById('colorname').innerHTML = 'Green'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.background = 'lime'; document.getElementById('hex').innerHTML = '#00FF00'; document.getElementById('rgb').innerHTML = '(0, 255, 0)'"></button>
-<button tabindex="5" style="background-color: blue;" onmouseover="document.getElementById('colorname').innerHTML = 'Blue'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'blue'; document.getElementById('hex').innerHTML = '#0000FF'; document.getElementById('rgb').innerHTML = '(0, 0, 255)'"></button>
-<button tabindex="6" style="background-color: mediumpurple;" onmouseover="document.getElementById('colorname').innerHTML = 'Purple'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'mediumpurple'; document.getElementById('hex').innerHTML = '#9370DB'; document.getElementById('rgb').innerHTML = '(147, 112, 219)'"></button>
-<button tabindex="7" style="background-color: pink;" onmouseover="document.getElementById('colorname').innerHTML = 'Pink'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'pink'; document.getElementById('hex').innerHTML = '#FFC0CB'; document.getElementById('rgb').innerHTML = '(255, 192, 203)'"></button></div>
-<div class="colors2" id="colors2" style="height: auto;">
-<button tabindex="8" style="background-color: chocolate;" onmouseover="document.getElementById('colorname').innerHTML = 'Brown'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'chocolate'; document.getElementById('hex').innerHTML = '#D2691E'; document.getElementById('rgb').innerHTML = '(210, 105, 30)'"></button>
-<button tabindex="9" style="background-color: white;" onmouseover="document.getElementById('colorname').innerHTML = 'White'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'white'; document.getElementById('hex').innerHTML = '#FFFFFF'; document.getElementById('rgb').innerHTML = '(255, 255, 255)'"></button>
-<button tabindex="10" style="background-color: gray;" onmouseover="document.getElementById('colorname').innerHTML = 'Gray'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'gray'; document.getElementById('hex').innerHTML = '#808080'; document.getElementById('rgb').innerHTML = '(128, 128, 128)'"></button>
-<button tabindex="11" style="background-color: black;" onmouseover="document.getElementById('colorname').innerHTML = 'Black'" onmouseout="document.getElementById('colorname').innerHTML = ''" onclick="document.getElementById('square').style.backgroundColor = 'black'; document.getElementById('hex').innerHTML = '#000000'; document.getElementById('rgb').innerHTML = '(0, 0, 0)'"></button></div></span>
+    <center><h1 class="options">Color Options</h1>
+</center><br><center><button id="optionscollapse" style="font-size: 20px">Collapse</button></center><h2><span id="colorname"></span></h2>
+<div id="colors1" class="show">
+<button tabindex="1" style="background-color: red;"></button>
+<button tabindex="2" style="background-color: orange;"></button>
+<button tabindex="3" style="background-color: yellow;"></button>
+<button tabindex="4" style="background-color: lime;"></button>
+<button tabindex="5" style="background-color: blue;"></button>
+<button tabindex="6" style="background-color: mediumpurple;"></button>
+<button tabindex="7" style="background-color: pink;"></button></div>
+</span>
 <br><br>
 <ul><li><div id="square" style="background: red;"></div></li></ul><br><br><br><br><br>
-<table><tbody><tr><th>Color Info</th></tr><tr><td>Hex: <span id="hex">#FF0000</span></td></tr><tr><td>RGB: <span id="rgb">(255, 0, 0)</span></td></tr></tbody></table><br><br><br><br>
-
-
+<table><tbody><tr><th>Color Info</th></tr><tr><td>Hex: <span id="hex">#FF0000</span></td></tr><tr><td>RGB: <span id="rgb">255, 0, 0</span></td></tr></tbody></table><br><br><br><br>
+<script>
+        $("button:nth-child(2)").mouseover(function(){
+       $("#colorname").html("Red");
+    });
+        $("button:nth-child(3)").mouseover(function(){
+       $("#colorname").html("Orange");
+    });
+        $("button:nth-child(4)").mouseover(function(){
+       $("#colorname").html("Yellow");
+    });
+        $("button:nth-child(5)").mouseover(function(){
+       $("#colorname").html("Green");
+    });
+        $("button:nth-child(6)").mouseover(function(){
+       $("#colorname").html("Blue");
+    });
+        $("button:nth-child(7)").mouseover(function(){
+       $("#colorname").html("Purple");
+    });
+        $("button:nth-child(8)").mouseover(function(){
+       $("#colorname").html("Pink");
+    });
+        $("button:nth-child(2)").click(function(){
+       $("#hex").html("#FF0000");
+       $("#rgb").html("255, 0, 0");
+    });
+        $("button:nth-child(3)").click(function(){
+       $("#hex").html("#FFA500");
+       $("#rgb").html("255, 165, 0");
+    });
+        $("button:nth-child(4)").click(function(){
+       $("#hex").html("#FFFF00");
+       $("#rgb").html("255, 255, 0");
+    });
+        $("button:nth-child(5)").click(function(){
+       $("#hex").html("#00FF00");
+       $("#rgb").html("0, 255, 0");
+    });
+        $("button:nth-child(6)").click(function(){
+       $("#hex").html("#000FF");
+       $("#rgb").html("0, 0, 255");
+    });
+        $("button:nth-child(7)").click(function(){
+       $("#hex").html("#9370DB");
+       $("#rgb").html("147, 112, 219");
+    });
+        $("button:nth-child(8)").click(function(){
+       $("#hex").html("#FFC0CB");
+       $("#rgb").html("255, 192, 203");
+    });
+        $("button").mouseout(function(){
+       $("#colorname").html("");
+    });
+        $("#optionscollapse").click(function(){
+       $("#colors1").toggleClass("show nah")
+    });
+</script>
 </body></html>
