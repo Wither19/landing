@@ -22,30 +22,37 @@
         $("#colors1 button:nth-child(1)").click(function(){
        $("#hex").html("#FF0000");
        $("#rgb").html("255, 0, 0");
+        $("#square").css({"background-color": "red"});
     });
         $("#colors1 button:nth-child(2)").click(function(){
        $("#hex").html("#FFA500");
        $("#rgb").html("255, 165, 0");
+        $("#square").css({"background-color": "orange"});
     });
         $("#colors1 button:nth-child(3)").click(function(){
        $("#hex").html("#FFFF00");
        $("#rgb").html("255, 255, 0");
+        $("#square").css({"background-color": "yellow"});
     });
         $("#colors1 button:nth-child(4)").click(function(){
        $("#hex").html("#00FF00");
        $("#rgb").html("0, 255, 0");
+        $("#square").css({"background-color": "lime"});
     });
         $("#colors1 button:nth-child(5)").click(function(){
        $("#hex").html("#000FF");
        $("#rgb").html("0, 0, 255");
+        $("#square").css({"background-color": "blue"});
     });
         $("#colors1 button:nth-child(6)").click(function(){
        $("#hex").html("#9370DB");
        $("#rgb").html("147, 112, 219");
+         $("#square").css({"background-color": "#9370DB"});
     });
         $("#colors1 button:nth-child(7)").click(function(){
        $("#hex").html("#FFC0CB");
        $("#rgb").html("255, 192, 203");
+        $("#square").css({"background-color": "pink"});
     });
         $("#colors1 button").mouseout(function(){
        $("#colorname").html("");
