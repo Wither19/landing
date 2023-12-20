@@ -40,7 +40,7 @@
         $("#square").css({"background-color": "lime"});
     });
         $("#colors1 button:nth-child(5)").click(function(){
-       $("#hex").html("#000FF");
+       $("#hex").html("#0000FF");
        $("#rgb").html("0, 0, 255");
         $("#square").css({"background-color": "blue"});
     });
