@@ -354,3 +354,18 @@ iframe.youtubeshortsmobile {
 br {
   user-select: none;
 }
+    .nah {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+   p {
+        font-size: 24px;
+        line-height: 170%;
+        margin: 10px;
+    }
+    kbd {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 3px;
+    }
