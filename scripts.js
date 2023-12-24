@@ -25,3 +25,13 @@
             $("#dropdownshortcuts").addClass("nah");
            }
         });
+        $(document).keydown(function(e){
+           if(e.which == 40){
+            $(".flip-panel:focus").next().focus();
+           }
+        });
+        $(document).keydown(function(e){
+           if(e.which == 38){
+            $(".flip-panel:focus").prev().focus();
+           }
+        });
