@@ -205,7 +205,7 @@ ul.flip-panel li.flip-text {
     display: block;
     user-select: none;
 }
-ul.flip-panel:hover li.flip-text {
+ul.flip-panel:hover li.flip-text, ul.flip-panel:focus li.flip-text {
       transform: scale(110%) translate(0px, -11px);
       color:#4b67cc;
       background-color: #006aff;
@@ -224,7 +224,7 @@ li.flip-text a {
   cursor: pointer;
   user-select: none;
 }
-li.flip-text:hover a {
+li.flip-text:hover a, li.flip-text:focus a {
   color:#afa3f5;
   filter:none;
   transform:none;
