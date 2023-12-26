@@ -35,3 +35,22 @@
             $(".flip-panel:focus").prev().focus();
            }
         });
+       $(document).ready(function(){
+           $(".antilag").on("contextmenu", function(e){
+               e.preventDefault();
+               var mouseX = e.pageX;
+               var mouseY = e.pageY;
+               $(".context").css({
+                  "top": mouseY,
+                  "left": mouseX,
+                  "display": "block"
+               });
+           });
+       });
+        $(document).ready(function(){
+           $(".antilag").click(function(){
+              $(".context").css({
+                 "display": "none" 
+              });
+           });
+        });
