@@ -8,6 +8,10 @@ body {
   padding: 10px;
 }
 
+#weapontext {
+  text-align: center;  
+}
+
 #game, #weaponStatus {
   max-width: 500px;
   max-height: 400px;
