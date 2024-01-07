@@ -44,15 +44,21 @@ button {
   background-image: linear-gradient(#fecc4c, #ffac33);
   border: 3px solid #feac32;
 }
-#goldText {
-  background-color: #feac32;
-  background-image: linear-gradient(#ffd363 30%, #ff9700);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 #xpText {
     background-color: #56fe32;
     background-image: linear-gradient(#67ff7a 30%, #018516);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+#healthText {
+    background-color: #ff7c7c;
+    background-image: linear-gradient(#ff7c7c 30%, #ff2c2c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#goldText {
+  background-color: #feac32;
+  background-image: linear-gradient(#ffd363 30%, #ff9700);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
