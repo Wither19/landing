@@ -136,11 +136,11 @@ function buyWeapon() {
       currentWeapon++;
       goldText.innerText = gold;
       let newWeapon = weapons[currentWeapon].name;
-      text.innerText = "You now have a " + newWeapon + ".";
+      text.innerText = "You bought a " + newWeapon + ".";
       inventory.push(newWeapon);
       text.innerText += " In your inventory you have: " + inventory;
     } else {
-      text.innerText = "You do not have enough gold to buy a weapon.";
+      text.innerText = "You do not have enough gold for that.";
     }
   } else {
     text.innerText = "You already have the most powerful weapon!";
@@ -217,7 +217,7 @@ function isMonsterHit() {
 }
 
 function dodge() {
-  text.innerText = "You dodge the attack from the " + monsters[fighting].name;
+  text.innerText = "You dodge the " + monsters[fighting].name + "'s attack."  ;
 }
 
 function defeatMonster() {
@@ -270,7 +270,7 @@ function pick(guess) {
     text.innerText += numbers[i] + "\n";
   }
   if (numbers.indexOf(guess) !== -1) {
-    text.innerText += "Right! You win 20 gold!";
+    text.innerText += "Correct! You win 20 gold!";
     gold += 20;
     goldText.innerText = gold;
   } else {
