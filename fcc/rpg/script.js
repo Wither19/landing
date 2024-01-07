@@ -19,10 +19,10 @@ const monsterHealthText = document.querySelector("#monsterHealth");
 const weaponStatus = document.querySelector("#weapontext");
 
 const weapons = [
-  { name: 'stick', power: 5 },
-  { name: 'dagger', power: 30 },
-  { name: 'claw hammer', power: 50 },
-  { name: 'sword', power: 100 }
+  { name: 'Stick', power: 5 },
+  { name: 'Dagger', power: 30 },
+  { name: 'Claw hammer', power: 50 },
+  { name: 'Sword', power: 100 }
 ];
 const monsters = [
   {
@@ -106,7 +106,7 @@ function update(location) {
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
   text.innerText = location.text;
-  weaponStatus.innerText = weapons[currentWeapon].name + "| Damage: " + weapons[currentWeapon].power;
+  weaponStatus.innerText = weapons[currentWeapon].name + " | Damage: " + weapons[currentWeapon].power;
 }
 
 function goTown() {
@@ -149,7 +149,7 @@ function buyWeapon() {
     text.innerText = "You already have the most powerful weapon!";
     button2.innerText = "Sell weapon for 15 gold";
     button2.onclick = sellWeapon;
-    weaponStatus.innerText = weapons[currentWeapon].name + "| Damage: " + weapons[currentWeapon].power;
+    weaponStatus.innerText = weapons[currentWeapon].name + " | Damage: " + weapons[currentWeapon].power;
   }
 }
 
@@ -250,7 +250,7 @@ function restart() {
   goldText.innerText = gold;
   healthText.innerText = health;
   xpText.innerText = xp;
-  weaponStatus.innerText = weapons[currentWeapon].name + "| Damage: " + weapons[currentWeapon].power;
+  weaponStatus.innerText = weapons[currentWeapon].name + " | Damage: " + weapons[currentWeapon].power;
   goTown();
 }
 
