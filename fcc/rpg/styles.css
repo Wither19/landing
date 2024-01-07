@@ -29,6 +29,10 @@ body {
   font-size: 32px;
 }
 
+#stats {
+  text-align: center;
+}
+
 #monsterStats {
   display: none;
   border: 1px solid #0a0a23;
