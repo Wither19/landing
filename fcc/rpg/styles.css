@@ -50,3 +50,9 @@ button {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+#xpText {
+    background-color: #56fe32;
+    background-image: linear-gradient(#67ff7a 30%, #018516);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
