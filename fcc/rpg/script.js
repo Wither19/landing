@@ -106,7 +106,7 @@ function update(location) {
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
   text.innerText = location.text;
-  weaponStatus.innerText = weapons[currentWeapon].name;
+  weaponStatus.innerText = weapons[currentWeapon].name + "| Damage: " + weapons[currentWeapon].power;
 }
 
 function goTown() {
@@ -149,7 +149,7 @@ function buyWeapon() {
     text.innerText = "You already have the most powerful weapon!";
     button2.innerText = "Sell weapon for 15 gold";
     button2.onclick = sellWeapon;
-    weaponStatus.innerText = weapons[currentWeapon].name;
+    weaponStatus.innerText = weapons[currentWeapon].name + "| Damage: " + weapons[currentWeapon].power;
   }
 }
 
@@ -160,7 +160,7 @@ function sellWeapon() {
     let currentWeapon = inventory.shift();
     text.innerText = "You sold a " + currentWeapon + ".";
     text.innerText += " In your inventory you have: " + inventory;
-    weaponStatus.innerText = weapons[currentWeapon].name;
+    weaponStatus.innerText = weapons[currentWeapon].name + "| Damage: " + weapons[currentWeapon].power;
   } else {
     text.innerText = "Don't sell your only weapon!";
   }
@@ -250,7 +250,7 @@ function restart() {
   goldText.innerText = gold;
   healthText.innerText = health;
   xpText.innerText = xp;
-  weaponStatus.innerText = weapons[currentWeapon].name;
+  weaponStatus.innerText = weapons[currentWeapon].name + "| Damage: " + weapons[currentWeapon].power;
   goTown();
 }
 
