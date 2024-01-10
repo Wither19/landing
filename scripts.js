@@ -54,3 +54,49 @@
               });
            });
         });
+   $("#tab-one").click(function(){
+     $(".proj").css({
+       "display": "block"
+     });
+     $(".exp").css({
+       "display": "none"
+     });
+     $(".misc").css({
+       "display": "none"
+     });
+   });
+   
+   $("#tab-two").click(function(){
+     $(".proj").css({
+       "display": "none"
+     });
+     $(".exp").css({
+       "display": "block"
+     });
+     $(".misc").css({
+       "display": "none"
+     });
+   });
+   
+   $("#tab-three").click(function(){
+     $(".proj").css({
+       "display": "none"
+     });
+     $(".exp").css({
+       "display": "none"
+     });
+     $(".misc").css({
+       "display": "block"
+     });
+   });
+   $("#tab-four").click(function(){
+     $(".proj").css({
+       "display": "block"
+     });
+     $(".exp").css({
+       "display": "block"
+     });
+     $(".misc").css({
+       "display": "block"
+     });
+   });
