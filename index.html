@@ -24,6 +24,7 @@
     a {
       color: blue;
       text-decoration: none;
+      font-size: 24px;
     }
     a:hover {
       color: purple;
@@ -99,12 +100,55 @@
     color: black;
     margin: 50px 0px;
   }
+  .tabs div {
+    width: 33%;
+  }
+  .tabs div, .other-tab div {
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 28px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+  }
+  .tabs div:active, .other-tab div:active {
+    color: skyblue;
+    transform: translate(0px, 4px);
+  }
+  #tab-one {
+    
+  }
+  #tab-two {
+    top: -33px;
+    left: 33.25%;
+  }
+  #tab-three {
+    top: -66px;
+    left: 66.5%;
+  }
+  #tab-four {
+    top: -50px;
+    left: -1px;
+    width: 301.5%;
+  }
     </style>
 </head>
 <body>
     <h1 id="top">Welcome to my domain<br><sub>(Now with JQuery)</sub></h1> 
     <br>
     <h1 id="shortcuts">Navigation <br><sub>(click for useful info!)</sub></h1>
+    <div class="tabs">
+      <div id="tab-one">Projects</div>
+      <div id="tab-two">Experimentation</div>
+      <div id="tab-three">Miscellaneous</div>
+    </ul>
+    <div class="other-tab">
+      <div id="tab-four">All</div>
+    </div>
+    <h2 id="link-id">All Links</h2>
             
     <div id="dropdownshortcuts" class="nah">
       <h2>The Shortcuts</h2>
@@ -115,24 +159,25 @@
         <br><br>
         <br><hr><br>
     </div>
-    <center><ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/homepageproject">Homepage Project</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/parable">Prodigal Son Web Design Project</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/calvarychemnotes">Chemistry Notes</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/demoknightcss">Demoknight CSS</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a id="tf2" href="https://wither19.github.io/thatdivisaspy/js-integrated">That div is a spy!</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/sandvichclicker">Sandvich Clicker</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/pkmnui">Pokemon UI</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/Pokedex">PokeAPI example</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/pfq">PFQ IMG Code Edits</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/drag-drop">JQuery Drag and Drop</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/incremental-rotation">JQuery Incremental Rotation</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/jqui">Jquery UI</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/arrowkey">Arrow Keydown JQuery thing<br><br><sub><kbd>ctrl</kbd> and <kbd>alt</kbd> - toggle virtual controls<br>Use the number keys to toggle between classes.</sub></a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/buttonlol">Landing Page Buttons</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/bootstrap">Bootstrap Playground</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/colorpicker">Color Picker JS Project</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/fcc/rpg">RPG freeCodeCamp Project</a></li></ul>
-        <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/sfx">Uber-funny Soundboard</a></li></ul>
+    <center>
+      <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/homepageproject">Homepage Project</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/parable">Prodigal Son Web Design Project</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/calvarychemnotes">Chemistry Notes</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/demoknightcss">Demoknight CSS</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a id="tf2" href="https://wither19.github.io/thatdivisaspy/js-integrated">That div is a spy!</a></li></ul>
+        <ul class="misc" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/sandvichclicker">Sandvich Clicker</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/pkmnui">Pokemon UI</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/Pokedex">PokeAPI example</a></li></ul>
+        <ul class="misc" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/pfq">PFQ IMG Code Edits</a></li></ul>
+        <ul class="exp" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/drag-drop">JQuery Drag and Drop</a></li></ul>
+        <ul class="exp" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/incremental-rotation">JQuery Incremental Rotation</a></li></ul>
+        <ul class="exp" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/jqui">Jquery UI</a></li></ul>
+        <ul class="exp" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/arrowkey">Arrow Keydown JQuery thing<br><br><sub><kbd>ctrl</kbd> and <kbd>alt</kbd> - toggle virtual controls<br>Use the number keys to toggle between classes.</sub></a></li></ul>
+        <ul class="misc" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/buttonlol">Landing Page Buttons</a></li></ul>
+        <ul class="misc" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/bootstrap">Bootstrap Playground</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/colorpicker">Color Picker JS Project</a></li></ul>
+        <ul class="proj" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/fcc/rpg">RPG freeCodeCamp Project</a></li></ul>
+        <ul class="misc" class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/sfx">Uber-funny Soundboard</a></li></ul>
     </center>
         <br><br>
         <ol class="context">
@@ -164,10 +209,10 @@
         Put a ring on his finger and sandals on his feet. <sup>23</sup> Bring the fattened calf and kill it. Let’s have a feast and celebrate. <sup>24</sup> For this son of mine was dead and is alive again; 
         he was lost and is found.’ So they began to celebrate. <br><br><br></sub>Luke 15:21-24</scripture></a>
     <br>
-        <a id="scrnovlink2" target="_blank" href="https://www.bible.com/bible/111/ROM.5.3-5.NIV"><scripture><sub id="scrnov2"> <sup>3</sup> Not only so, but we also glory in our sufferings, because we know that suffering produces perseverance; <sup>4</sup> perseverance, character; and character, hope. <sup>5</sup> And hope does not put us to shame, because God’s love has been poured out into our hearts through the Holy Spirit, who has been given to us.
+    <a id="scrnovlink2" target="_blank" href="https://www.bible.com/bible/111/ROM.5.3-5.NIV"><scripture><sub id="scrnov2"> <sup>3</sup> Not only so, but we also glory in our sufferings, because we know that suffering produces perseverance; <sup>4</sup> perseverance, character; and character, hope. <sup>5</sup> And hope does not put us to shame, because God’s love has been poured out into our hearts through the Holy Spirit, who has been given to us.
         <br><br><br></sub>Romans 5:3-5</scripture></a>
         <br>
-                <a id="scrnovlink3" target="_blank" href="https://www.bible.com/bible/111/1CO.13.1-3.NIV"><scripture><sub id="scrnov3"> <sup>1</sup> If I speak in the tongues of men or of angels, but do not have love, I am only a resounding gong or a clanging cymbal. <sup>1</sup> If I have the gift of prophecy and can fathom all mysteries and all knowledge, and if I have a faith that can move mountains, but do not have love, I am nothing. <sup>3</sup> If I give all I possess to the poor and give over my body to hardship that I may boast, but do not have love, I gain nothing.
+    <a id="scrnovlink3" target="_blank" href="https://www.bible.com/bible/111/1CO.13.1-3.NIV"><scripture><sub id="scrnov3"> <sup>1</sup> If I speak in the tongues of men or of angels, but do not have love, I am only a resounding gong or a clanging cymbal. <sup>1</sup> If I have the gift of prophecy and can fathom all mysteries and all knowledge, and if I have a faith that can move mountains, but do not have love, I am nothing. <sup>3</sup> If I give all I possess to the poor and give over my body to hardship that I may boast, but do not have love, I gain nothing.
         <br><br><br></sub>1 Corinthians 13:1-3</scripture></a>
         </h2></div>
             <br>
@@ -183,6 +228,52 @@
     <script src="https://wither19.github.io/landing/scripts.js">
     </script>
    <script>
+   $("#tab-one").click(function(){
+     $(".proj").css({
+       "display": "block"
+     });
+     $(".exp").css({
+       "display": "none"
+     });
+     $(".misc").css({
+       "display": "none"
+     });
+   });
+   
+   $("#tab-two").click(function(){
+     $(".proj").css({
+       "display": "none"
+     });
+     $(".exp").css({
+       "display": "block"
+     });
+     $(".misc").css({
+       "display": "none"
+     });
+   });
+   
+   $("#tab-three").click(function(){
+     $(".proj").css({
+       "display": "none"
+     });
+     $(".exp").css({
+       "display": "none"
+     });
+     $(".misc").css({
+       "display": "block"
+     });
+   });
+   $("#tab-four").click(function(){
+     $(".proj").css({
+       "display": "block"
+     });
+     $(".exp").css({
+       "display": "block"
+     });
+     $(".misc").css({
+       "display": "block"
+     });
+   });
    </script>
    
 </body></html>
