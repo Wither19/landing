@@ -354,3 +354,70 @@ iframe.youtubeshortsmobile {
 br {
   user-select: none;
 }
+.nah {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
+   p {
+        font-size: 24px;
+        line-height: 170%;
+        margin: 10px;
+    }
+    kbd {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 3px;
+    }
+    october, november, #shortcuts {
+        user-select: none;
+        cursor: pointer;
+    }
+    .context {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      padding-left: 0px;
+      background: slateblue;
+      border: 1px solid darkslateblue;
+      border-radius: 4px;
+      width: 16%;
+      height: 16%;
+      text-align: center;
+  }
+  .context span {
+      cursor: default;
+      color: antiquewhite;
+      font-family: "Mukta", sans-serif;
+      border-bottom: 1px solid antiquewhite;
+  }
+  .context span:hover {
+      transform: none;
+      filter: none;
+  }
+  .context span:active {
+      transform: none;
+      filter: none;
+  }
+  .context li {
+      border-left: none;
+      border-right: none;
+  }
+  .context, .context li, .context a {
+      text-decoration: none;
+      list-style-type: none;
+      color: lightblue;
+      font-size: 20px;
+  }
+  .context a {
+      cursor: pointer;
+  }
+  .context a:hover {
+      color: pink;
+  }
+  .context a:active {
+      color: antiquewhite;
+  }
+  .context li {
+      padding: 6px;
+  }
