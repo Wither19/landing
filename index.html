@@ -1,7 +1,7 @@
 <html lang="en"><head>
 <title>Landing Page!</title>
-<link rel="stylesheet" href="https://wither19.github.io/landing/style.css">
-<link rel="stylesheet" media="screen and (orientation: portrait)" href="https://wither19.github.io/landing/style-mobile.css" <link="">
+<link rel="stylesheet" href="https://wither19.github.io/landing/stylee.css">
+<link rel="stylesheet" media="screen and (orientation: portrait)" href="https://wither19.github.io/landing/stylee-mobile.css" <link="">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Arimo&amp;display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,6 +10,95 @@
 <link href="https://fonts.cdnfonts.com/css/tf2-build" rel="stylesheet">        
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <style>
+    h1, h2, h3 {
+      text-align: center;
+    }
+    sub {
+      text-align: center;
+    }
+    kbd {
+      border: 1px solid gray;
+      padding: 0 5;
+      font-family: courier;
+    }
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+    a:hover {
+      color: purple;
+    }
+    a:active {
+      color: rebeccapurple;
+    }
+    ul, ol {
+      list-style-type: none;
+    }
+    center ul {
+      padding-left: 0px;
+    }
+    october, november, #shortcuts {
+        user-select: none;
+        cursor: pointer;
+    }
+    .nah {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+    .context {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      padding-left: 0px;
+      background: lightgray;
+      border: 1px solid black;
+      border-radius: 4px;
+      width: 16%;
+      height: 20%;
+      text-align: center;
+  }
+  .context span {
+      cursor: default;
+      color: black;
+      border-bottom: 1px solid white;
+  }
+  .context span:hover {
+      transform: none;
+      filter: none;
+  }
+  .context span:active {
+      transform: none;
+      filter: none;
+  }
+  .context li {
+      border-left: none;
+      border-right: none;
+  }
+  .context, .context li, .context a {
+      text-decoration: none;
+      list-style-type: none;
+      color: blue;
+      font-size: 20px;
+  }
+  .context a {
+      cursor: pointer;
+  }
+  .context a:hover {
+      color: skyblue;
+  }
+  .context a:active {
+      color: rebeccapurple;
+  }
+  .context li {
+      padding: 6px;
+  } 
+  scripture {
+    display: block;
+    color: black;
+    margin: 50px 0px;
+  }
     </style>
 </head>
 <body>
@@ -22,9 +111,11 @@
         <br>
         <kbd>c</kbd> - Closes any open dropdowns on the site<br><sub>Because as shown below, they're kinda lengthy. You can even try it on this one!</sub>
         <br><br>
+        <kbd>Right Click</kbd> - Opens translation selection on the scripture page
+        <br><br>
         <br><hr><br>
     </div>
-    <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/homepageproject">Homepage Project</a></li></ul>
+    <center><ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/homepageproject">Homepage Project</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/parable">Prodigal Son Web Design Project</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/calvarychemnotes">Chemistry Notes</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/demoknightcss">Demoknight CSS</a></li></ul>
@@ -42,6 +133,7 @@
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/colorpicker">Color Picker JS Project</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/fcc/rpg">RPG freeCodeCamp Project</a></li></ul>
         <ul class="flip-panel"><li class="flip-text"><a href="https://wither19.github.io/landing/sfx">Uber-funny Soundboard</a></li></ul>
+    </center>
         <br><br>
         <ol class="context">
                 <span>Translations</span>
