@@ -64,6 +64,7 @@
      $(".misc").css({
        "display": "none"
      });
+     $("#link-id").html("Full-blown Projects");
    });
    
    $("#tab-two").click(function(){
@@ -76,6 +77,7 @@
      $(".misc").css({
        "display": "none"
      });
+     $("#link-id").html("Front-end Experimentation");
    });
    
    $("#tab-three").click(function(){
@@ -88,6 +90,7 @@
      $(".misc").css({
        "display": "block"
      });
+     $("#link-id").html("Random things");
    });
    $("#tab-four").click(function(){
      $(".proj").css({
@@ -99,4 +102,5 @@
      $(".misc").css({
        "display": "block"
      });
+     $("#link-id").html("All Links");
    });
