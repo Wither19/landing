@@ -118,10 +118,17 @@
     color: black;
     margin: 50px 0px;
   }
+  body.dark scripture {
+    color: white;
+  }
   .tabs div {
     width: 33%;
   }
   .tabs div, .other-tab div {
+    border: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     font-size: 28px;
     text-align: center;
     position: relative;
@@ -156,14 +163,14 @@
     z-index: 1;
     cursor: pointer;
   }
-  body.dark #darkmode {
+  #darkmode:has(body.dark) {
     background: rebeccapurple;
   }
   .bi-brightness-high-fill {
     color: red;
   }
   .bi-moon-stars-fill {
-    color: white;
+    color: gray;
     text-shadow: 1px 1px 1px inset white;
   }
     </style>
