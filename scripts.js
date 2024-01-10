@@ -107,4 +107,4 @@
    $("#darkmode").click(function(){
      $("body").toggleClass("dark");
      $("i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
-   }
+   });
