@@ -100,3 +100,9 @@
      $("body").toggleClass("dark");
      $("i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
    });
+    $(document).keydown(function(e){
+      if (e.which == 68) {     
+      $("body").toggleClass("dark");
+      $("i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
+      }
+    });
