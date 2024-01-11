@@ -1,11 +1,14 @@
            $("october").click(function(){
-              $("#dropdownoctober").toggleClass("nah show"); 
+              $("#dropdownoctober").toggleClass("nah show");
+              $("october > i").toggleClass("bi-caret-down-fill bi-caret-up-fill");
            });
            $("november").click(function(){
-              $("#dropdownnovember").toggleClass("nah show"); 
+              $("#dropdownnovember").toggleClass("nah show");
+              $("november > i").toggleClass("bi-caret-down-fill bi-caret-up-fill");
            });
            $("#shortcuts").click(function(){
-              $("#dropdownshortcuts").toggleClass("nah show"); 
+              $("#dropdownshortcuts").toggleClass("nah show");
+              $("#shortcuts > i").toggleClass("bi-caret-down-fill bi-caret-up-fill");
            });
         $(document).keydown(function(e){
            if(e.which == 67){
@@ -98,11 +101,11 @@
    });
    $("#darkmode").click(function(){
      $("body").toggleClass("dark");
-     $("i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
+     $("#darkmode > i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
    });
     $(document).keydown(function(e){
       if (e.which == 68) {     
       $("body").toggleClass("dark");
-      $("i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
+      $("#darkmode > i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
       }
     });
