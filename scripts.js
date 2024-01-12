@@ -14,10 +14,16 @@
            if(e.which == 67){
             $("#dropdownoctober").removeClass("show");
             $("#dropdownoctober").addClass("nah");
+            $("october > i").removeClass("bi-caret-up-fill");
+            $("october > i").addClass("bi-caret-down-fill");
             $("#dropdownnovember").removeClass("show");
             $("#dropdownnovember").addClass("nah");
+            $("november > i").removeClass("bi-caret-up-fill");
+            $("november > i").addClass("bi-caret-down-fill");
             $("#dropdownshortcuts").removeClass("show");
             $("#dropdownshortcuts").addClass("nah");
+            $("#shortcuts > i").removeClass("bi-caret-up-fill");
+            $("#shortcuts > i").addClass("bi-caret-down-fill");
            }
         });
         $(document).keydown(function(e){
