@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+<style>
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .flex div {
+    border: black 2px solid;
+    background: skyblue;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: 150ms;
+    margin: 2px;
+  }
+  .flex div:hover {
+    background: rebeccapurple;
+    transform: scale(1.1);
+    }
+    .flex div.selected {
+      animation-name: select;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes select {
+      0% {
+        background: rebeccapurple;
+      }
+      50% {
+        background: lime;
+      }
+      100% {
+        background: rebeccapurple;
+      }
+    }
+</style>
+</head>
+<body>
+  <div class="flex">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <script>
+    $(".flex div").click(function() {
+      $(this).addClass("selected");
+    }
+    $(".flex div").contextmenu(function() {
+      $(this).removeClass("selected");
+    }
+  </script>
+</body>
+</html>
