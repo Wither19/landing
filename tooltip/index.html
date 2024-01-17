@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <style>
+  body {
+    font-family: trebuchet ms;
+  }
+  p {
+    font-size: 32px;
+  }
+  .tooltip {
+      position: absolute;
+      border: 3px solid lightgray;
+      border-radius: 10px;
+      background: white;
+      width: 400px;
+      height: 25px;
+      text-align: center;
+      display: none;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .tt {
+      cursor: context-menu;
+      border-bottom: 4px dotted;
+    }
+  </style>
+</head>
+<body>
+  <p>hover right... <span class="tt">HERE</span></p>
+  <div class="tooltip">this is a tooltip</div>
+<script>
+  $(".tt").mousemove(function(e){
+    $(".tooltip").css({
+      "top": e.pageY,
+      "left": e.pageX
+    });
+  });
+  
+  $(".tt").mouseenter(function(e){
+    $(".tooltip").css({
+      "display": "block",
+      "top": e.pageY,
+      "left": e.pageX
+    })
+  });
+  
+  $(".tt").mouseleave(function(e){
+    $(".tooltip").css({
+      "display": "none"
+    })
+  });
+</script>
+</body>
+</html>
