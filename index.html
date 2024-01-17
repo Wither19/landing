@@ -124,36 +124,7 @@
   body.dark scripture {
     color: white;
   }
-  .tabs div {
-    width: 33%;
-  }
-  .tabs div, .other-tab div {
-    font-size: 28px;
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
-  }
-  .tabs div:active, .other-tab div:active {
-    color: skyblue;
-    transform: translate(0px, 4px);
-  }
-  #tab-one {
-    
-  }
-  #tab-two {
-    top: -33px;
-    left: 33.25%;
-  }
-  #tab-three {
-    top: -66px;
-    left: 66.5%;
-  }
-  #tab-four {
-    top: -50px;
-    left: -1px;
-    width: 301.5%;
-  }
+  .flex
   #darkmode {
     font-size: 40px;
     padding: 6px;
@@ -187,6 +158,20 @@ body.dark a:active {
 body.dark .bi-caret-down-fill, body.dark .bi-caret-up-fill {
     color: white;
 }
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.flex div {
+  font-size: 24px;
+  cursor: pointer;
+  user-select: none;
+}
+.flex div:active {
+  color: white;
+  background: skyblue;
+}
     </style>
 </head>
 <body class="">
@@ -205,15 +190,15 @@ body.dark .bi-caret-down-fill, body.dark .bi-caret-up-fill {
         <br><br>
         <br><hr><br>
     </div>
-    <center>
+    <div class="flex">
       <div id="tab-one">Projects</div>
       <div id="tab-two">Experimentation</div>
       <div id="tab-three">Miscellaneous</div>
     </ul>
-    </center>
-    <center>
+    </div>
+    <div class="flex">
       <div id="tab-four">All</div>
-    </center>
+    </div>
     <h2 id="link-id">All Links</h2>
 
     <center>
