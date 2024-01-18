@@ -182,15 +182,22 @@ body.dark .bi-caret-down-fill, body.dark .bi-caret-up-fill {
   top: 0;
   left: 90%;
   background: white;
+  transition: 0.75s;
+}
+.code:hover {
+  background: #e6e6e6;
 }
 body.dark .code {
   background: #19212e;
+}
+body.dark .code:hover {
+  background: #28364d;
 }
     </style>
 </head>
 <body class="">
   <button id="darkmode"><i class="bi bi-brightness-high-fill"></i></button>
-    <a class="code" href="https://wither19.github.io/landing/code">Input A Code!</a>
+    <a class="code" id="codeprompt" href="#">Input A Code!</a>
     <h1 id="top">Welcome to my domain<br><sub>(Now with JQuery)</sub></h1> 
     <br>
     <h1 id="shortcuts">Navigation<i class="bi bi-caret-down-fill"></i></sub></h1>
@@ -284,8 +291,11 @@ body.dark .code {
     <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/nU8fMyZDO9o?si=DofeKTnQeAGUEvJm" width="226px" height="400px"></iframe></center>
     <script src="https://wither19.github.io/landing/scripts.js"></script>
     <script>
+     $("#codeprompt").click(function(){
+  let person = prompt("Please enter a passcode");
+  
+  if (person = "5831") {
+    alert("Lol that did nothing");
+  }
     </script>
-   <script>
-   </script>
-   
 </body></html>
