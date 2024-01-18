@@ -122,14 +122,7 @@
            }
                 
            else if (codePrompt = "sandvich") {
-               alert("Moist and Delicious!");
-                      
-           $(document).on("mousemove", function(e){
-                      $("#sandvich").css({
-                      "top": e.pageY,
-                      "left": e.pageX
-               });
-                      
+               alert("Moist and Delicious!");       
                $("#sandvich").css({
                       "display": "block",
                       "top": e.pageY,
@@ -141,3 +134,10 @@
                alert("Invalid Code");
            }
      });
+
+// - "Perfect fuel for killing tiny cowards!" -Heavy Team Fortress 2
+$(document).mousemove(function(e){
+                      $("#sandvich").css({
+                      "top": e.pageY,
+                      "left": e.pageX
+               });
