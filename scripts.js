@@ -1,3 +1,4 @@
+           // -  A formulaic set of functions for all the dropdowns 
            $("october").click(function(){
               $("#dropdownoctober").toggleClass("nah show");
               $("october > i").toggleClass("bi-caret-down-fill bi-caret-up-fill");
@@ -26,16 +27,7 @@
             $("#shortcuts > i").addClass("bi-caret-down-fill");
            }
         });
-        $(document).keydown(function(e){
-           if(e.which == 40){
-            $(".flip-panel:focus").next().focus();
-           }
-        });
-        $(document).keydown(function(e){
-           if(e.which == 38){
-            $(".flip-panel:focus").prev().focus();
-           }
-        });
+           // - Bible translation context menu
        $(document).ready(function(){
            $(".antilag").on("contextmenu", function(e){
                e.preventDefault();
@@ -48,6 +40,7 @@
                });
            });
        });
+
         $(document).ready(function(){
            $(".antilag").click(function(){
               $(".context").css({
@@ -55,6 +48,7 @@
               });
            });
         });
+// - Link navigation filters
    $("#tab-one").click(function(){
      $(".proj").css({
        "display": "block"
@@ -105,6 +99,8 @@
      });
      $("#link-id").html("All Links");
    });
+
+// - Dark / Light mode toggle
    $("#darkmode").click(function(){
      $("body").toggleClass("dark");
      $("#darkmode > i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
@@ -115,9 +111,26 @@
       $("#darkmode > i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
       }
     });
-     $("#codeprompt").click(function(){
+
+// - Passcode prompt and all code results
+     $("#codeprompt").click(function(e){
       let codePrompt = prompt("Please enter a passcode");
            if (codePrompt = "5831") {
                alert("Lol that did nothing");
-             }
+           }
+           if (codePrompt = "meet_the_sandvich") {
+               alert("Moist and Delicious!");
+               $("#sandvich").css({
+                          "display": "block",
+                          "top": e.pageY,
+                          "left": e.pageX 
+               });
+               $(document).on("mousemove", function(e){
+                          "top": e.pageY,
+                          "left": e.pageX
+               }
+           }
+           else if {
+               alert("Invalid Code")
+           }
      });
