@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<title>Online HTML Editor</title>
+<head>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <style>
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .notifwrapper {
+      color: gray;
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+  }
+  input {
+    width: 10%;
+    padding: 12px 0px;
+    text-align: center;
+    font-size: 32px;
+  }
+  </style>
+</head>
+<body>
+  <div class="buttons">
+    <input type="number" value="0">
+    <input type="number" value="0">
+    <input type="number" value="0">
+    <input type="number" value="0">
+  </div>
+  <div class="notifwrapper">
+    <span id="locknotif">Input a code</span>
+  </div>
+  <script>
+    const lockNotif = document.querySelector("#locknotif");
+    const btnOne = document.querySelector("#input:nth-child(1)");
+    const btnTwo = document.querySelector("#input:nth-child(2)");
+    const btnThree = document.querySelector("#input:nth-child(3)");
+    const btnFour = document.querySelector("#input:nth-child(4)");
+    
+    $(document).keydown(function(e){
+      if (e.which = 13 && btnOne.textContent = "5" && btnTwo.textContent = "8" && btnThree.textContent = "3" && btnFour.textContent = "1") {
+        $("#locknotif").html("This is the right code!");
+        $("#locknotif").addClass("success");
+        $("#locknotif").removeClass("failure");
+      }
+        
+      else if {
+        $("#locknotif").html("Wrong code! Try again");
+        $("#locknotif").addClass("failure");
+        $("#locknotif").removeClass("success");
+      }
+    });
+    
+    $(document).keydown(function(e){
+      if (e.which == 82) {
+        $("#locknotif").html("Input a code");
+        $("#locknotif").removeClass("success");
+        $("#locknotif").removeClass("failure");
+        let btnOne.textContent = "0";
+        let btnTwo.textContent = "0";
+        let btnThree.textContent = "0";
+        let btnFour.textContent = "0";
+        alert("Reset code!");
+    }
+    });
+  </script>
+</body>
+</html>
