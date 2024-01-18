@@ -115,3 +115,9 @@
       $("#darkmode > i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
       }
     });
+     $("#codeprompt").click(function(){
+  let person = prompt("Please enter a passcode");
+  
+  if (person = "5831") {
+    alert("Lol that did nothing");
+  }
