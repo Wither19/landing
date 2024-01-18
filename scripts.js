@@ -121,27 +121,21 @@ $(document).keydown(function(e) {
 
 // - Passcode prompt and all code results
 $("#codeprompt").click(function(e) {
-
     let codePrompt = prompt("Please enter a passcode");
-
-    if (codePrompt = "5831") {
+    if (codePrompt == "5831") {
         alert("Lol that did nothing");
     }
-  
-  	else if (codePrompt = "sandvich") {
+  	else if (codePrompt == "sandvich") {
         alert("Moist and Delicious!");
         $("#sandvich").css({
             "display": "block",
             "top": e.pageY,
             "left": e.pageX
-       	});
-  
-		}
-  
+	});
+    }
     else {
     alert("Invalid Code");
-		}
-  
+    }  
 });
 
 // - "Perfect fuel for killing tiny cowards!" -Heavy Team Fortress 2
