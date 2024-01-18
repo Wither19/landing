@@ -114,20 +114,27 @@
 
 // - Passcode prompt and all code results
      $("#codeprompt").click(function(e){
+                
       let codePrompt = prompt("Please enter a passcode");
+                
            if (codePrompt = "5831") {
                alert("Lol that did nothing");
            }
-           if (codePrompt = "meet_the_sandvich") {
+                
+           if (codePrompt = "sandvich") {
                alert("Moist and Delicious!");
-               $("#sandvich").css({
-                          "display": "block",
-                          "top": e.pageY,
-                          "left": e.pageX 
+                      
+           $(document).on("mousemove", function(e){
+                      $("#sandvich").css({
+                      "top": e.pageY,
+                      "left": e.pageX
                });
-               $(document).on("mousemove", function(e){
-                          "top": e.pageY,
-                          "left": e.pageX
+                      
+               $("#sandvich").css({
+                      "display": "block",
+                      "top": e.pageY,
+                      "left": e.pageX 
+               });
                }
            }
            else if {
