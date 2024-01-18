@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <title>Online HTML Editor</title>
@@ -16,9 +15,9 @@
       border: 3px solid lightgray;
       border-radius: 10px;
       background: white;
-      width: 400px;
-      height: 25px;
-      text-align: center;
+      width: 250px;
+      height: 40px;
+      padding: 0px 20px;
       opacity: 0;
       margin-top: 10px;
       margin-left: 10px;
@@ -34,10 +33,10 @@
   </style>
 </head>
 <body>
-  <p>hover right... <span class="tt">HERE</span></p>
+  <p>hover right... <span class="tt" id="tool">HERE</span><br><br><br>also <span class="tt" id="also">here</span></p>
   <div class="tooltip">this is a tooltip</div>
 <script>
-  $(".tt").mousemove(function(e){
+  $(document).mousemove(function(e){
     $(".tooltip").css({
       "top": e.pageY,
       "left": e.pageX
@@ -56,6 +55,14 @@
     $(".tooltip").css({
       "opacity": "0"
     })
+  });
+  
+  $("#tool").mouseenter(function(){
+    $(".tooltip").html("this is a tooltip");
+  });
+  
+  $("#also").mouseenter(function(){
+    $(".tooltip").html("oh, this is also a tooltip");
   });
 </script>
 </body>
