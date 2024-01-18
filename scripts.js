@@ -121,7 +121,7 @@
                alert("Lol that did nothing");
            }
                 
-           if (codePrompt = "sandvich") {
+           else if (codePrompt = "sandvich") {
                alert("Moist and Delicious!");
                       
            $(document).on("mousemove", function(e){
@@ -137,7 +137,7 @@
                });
                }
            }
-           else if {
-               alert("Invalid Code")
+           else {
+               alert("Invalid Code");
            }
      });
