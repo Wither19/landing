@@ -1,16 +1,20 @@
+
            // -  A formulaic set of functions for all the dropdowns 
            $("october").click(function(){
               $("#dropdownoctober").toggleClass("nah show");
               $("october > i").toggleClass("bi-caret-down-fill bi-caret-up-fill");
            });
+
            $("november").click(function(){
               $("#dropdownnovember").toggleClass("nah show");
               $("november > i").toggleClass("bi-caret-down-fill bi-caret-up-fill");
            });
+
            $("#shortcuts").click(function(){
               $("#dropdownshortcuts").toggleClass("nah show");
               $("#shortcuts > i").toggleClass("bi-caret-down-fill bi-caret-up-fill");
            });
+
         $(document).keydown(function(e){
            if(e.which == 67){
             $("#dropdownoctober").removeClass("show");
@@ -27,6 +31,7 @@
             $("#shortcuts > i").addClass("bi-caret-down-fill");
            }
         });
+
            // - Bible translation context menu
        $(document).ready(function(){
            $(".antilag").on("contextmenu", function(e){
@@ -48,6 +53,7 @@
               });
            });
         });
+
 // - Link navigation filters
    $("#tab-one").click(function(){
      $(".proj").css({
@@ -87,6 +93,7 @@
      });
      $("#link-id").html("Random things");
    });
+
    $("#tab-four").click(function(){
      $(".proj").css({
        "display": "block"
@@ -105,6 +112,7 @@
      $("body").toggleClass("dark");
      $("#darkmode > i").toggleClass("bi-brightness-high-fill bi-moon-stars-fill");
    });
+
     $(document).keydown(function(e){
       if (e.which == 68) {     
       $("body").toggleClass("dark");
@@ -137,7 +145,7 @@
 
 // - "Perfect fuel for killing tiny cowards!" -Heavy Team Fortress 2
 $(document).mousemove(function(e){
-                      $("#sandvich").css({
-                      "top": e.pageY,
-                      "left": e.pageX
-               });
+   $("#sandvich").css({
+           "top": e.pageY,
+           "left": e.pageX
+           });
