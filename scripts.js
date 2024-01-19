@@ -127,28 +127,11 @@ $("#codeprompt").click(function(e) {
     }
   	else if (codePrompt == "sandvich") {
         alert("Moist and Delicious! Sandvich Mode activated!");
-        $("#sandvich").css({
-            "display": "block",
-            "top": e.pageY,
-            "left": e.pageX
+        $(document).css({
+	   'cursor': 'url("https://media.tenor.com/tucmrFO9bcAAAAAi/sandvich-sandwich.gif")'
 	});
     }
     else {
     alert("Invalid Code");
     }  
-});
-
-// - "Perfect fuel for killing tiny cowards!" -Heavy Team Fortress 2
-$(document).mousemove(function(e) {
-            $("#sandvich").css({
-                "top": e.pageY,
-                "left": e.pageX
-            });
-});
-
-$(document).scroll(function(e) {
-            $("#sandvich").css({
-                "top": e.pageY,
-                "left": e.pageX
-            });
 });
