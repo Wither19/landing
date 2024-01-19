@@ -177,7 +177,7 @@ body.dark .bi-caret-down-fill, body.dark .bi-caret-up-fill {
   background: skyblue;
 }
 
-.code {
+.code, .plist {
   border: lightgray 3px solid;
   border-radius: 10px;
   padding: 10px;
@@ -187,14 +187,17 @@ body.dark .bi-caret-down-fill, body.dark .bi-caret-up-fill {
   background: white;
   transition: 0.75s;
 }
-.code:hover {
+.code:hover, .plist:hover {
   background: #e6e6e6;
 }
-body.dark .code {
+body.dark .code, body.dark .plist {
   background: #19212e;
 }
-body.dark .code:hover {
+body.dark .code:hover, body.dark .plist:hover {
   background: #28364d;
+}
+.plist {
+  left: 10%;
 }
 #sandvich {
   transform: scale(1.25);
@@ -202,10 +205,50 @@ body.dark .code:hover {
   z-index: 3;
   position: absolute;
 }
+
+#music {
+  position: fixed;
+  top: 15%;
+  z-index: 5;
+  width: 65%;
+}
+#music::backdrop {
+  background-color: gray;
+  opacity: 1;
+}
+#music div {
+
+}
+#music div:nth-child(odd) {
+  background: white;
+}
+#music div:nth-child(even) {
+  background: lightgray;
+}
+#music h3 img {
+  width: 64px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 8px;
+  position: relative;
+  left: -30%;
+  padding: 5px 0px 0px 0px;
+}
+#music > h3 > span {
+  position: relative;
+  top: -36px;
+  left: -20%;
+}
     </style>
 </head>
 <body class="">
   <button id="darkmode"><i class="bi bi-brightness-high-fill"></i></button>
+  <a class="plist" href="#">Songs</a>
+  <dialog id="music" open>
+    <button><i class="bi bi-x"></i></button>
+    <h1>Song Selection</h1>
+    <div><h3><img src="https://resources.tidal.com/images/a4f908b0/4bbd/474b/8a3c/7657bb5ab996/1280x1280.jpg"><span>Song 1</span></h3></div>
+    <div><h3><img src="https://resources.tidal.com/images/a4f908b0/4bbd/474b/8a3c/7657bb5ab996/1280x1280.jpg"><span>Song 1<span></h3></div>
+  </dialog>
     <a class="code" id="codeprompt" href="#">Input A Code!</a>
     <img id="sandvich" src="https://media.tenor.com/tucmrFO9bcAAAAAi/sandvich-sandwich.gif">
     <h1 id="top">Welcome to my domain<br><sub>(Now with JQuery)</sub></h1> 
@@ -213,11 +256,13 @@ body.dark .code:hover {
     <h1 id="shortcuts">Shortcuts<i class="bi bi-caret-down-fill"></i></sub></h1>
     <div id="dropdownshortcuts" class="nah">
         <br>
-        <kbd>C</kbd> - Closes any open dropdowns on the site
+        <kbd>c</kbd> - Closes any open dropdowns on the site
         <br><br>
-        <kbd>D</kbd> - Toggles between light and dark mode
+        <kbd>d</kbd> - Toggles between light and dark mode
         <br><br>
-        <kbd>Right Click</kbd> - Opens translation selection on the scripture page
+        <kbd>RMB</kbd> - Opens translation selection on the scripture page
+        <br><br>
+        <kbd>p</kbd> - opens song selection
         <br><br>
         <br><hr><br>
     </div>
@@ -300,5 +345,17 @@ body.dark .code:hover {
     <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/nU8fMyZDO9o?si=DofeKTnQeAGUEvJm" width="226px" height="400px"></iframe></center>
     <script src="https://wither19.github.io/landing/scripts.js"></script>
     <script>
+    $("#plist").click(function(){
+      $("#music").showModal();
+    });
+    $(document).keydown(function(e){
+      if (e.which == 80) {
+        $("#music").showModal();
+      }
+    });
+    
+    $("#music button").click(fucntion(){
+      $("#music").close();
+    });
     </script>
 </body></html>
