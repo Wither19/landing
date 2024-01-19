@@ -126,7 +126,7 @@ $("#codeprompt").click(function(e) {
         alert("Lol that did nothing");
     }
   	else if (codePrompt == "sandvich") {
-        alert("Moist and Delicious!");
+        alert("Moist and Delicious! Sandvich Mode activated!");
         $("#sandvich").css({
             "display": "block",
             "top": e.pageY,
@@ -140,6 +140,13 @@ $("#codeprompt").click(function(e) {
 
 // - "Perfect fuel for killing tiny cowards!" -Heavy Team Fortress 2
 $(document).mousemove(function(e) {
+            $("#sandvich").css({
+                "top": e.pageY,
+                "left": e.pageX
+            });
+});
+
+$(document).scroll(function(e) {
             $("#sandvich").css({
                 "top": e.pageY,
                 "left": e.pageX
