@@ -133,7 +133,7 @@ $("#codeprompt").click(function(e) {
             "left": e.pageX
 	});
 		
-	$(document).css({
+	$("body *").css({
 	    	"cursor": "none"	
 	});
 		
