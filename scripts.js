@@ -132,6 +132,11 @@ $("#codeprompt").click(function(e) {
             "top": e.pageY,
             "left": e.pageX
 	});
+		
+	$(document).css({
+	    	"cursor": "none"	
+	});
+		
     }
     else {
     alert("Invalid Code");
