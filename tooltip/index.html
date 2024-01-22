@@ -30,10 +30,47 @@
     .tt:hover {
       border-bottom: 3px blue dotted;
     }
+    .context {
+      opacity: 0;
+      position: absolute;
+      display: block;
+      background: white;
+      border: 4px solid lightgray;
+      border-radius: 16px;
+      width: 30%;
+      text-align: center;
+      transition: opacity 0.25s;
+      user-select: none;
+    }
+    .context h1 {
+      border-bottom: 1px solid gray;
+      font-size: 24px;
+    }
+    .context li {
+      font-size: 20px;
+      list-style-type: none;
+      margin-left: -25%;
+      padding: 6px 0px;
+      cursor: pointer;
+    }
+    .context li:hover {
+      background: gray;
+      color: white;
+      font-weight: 900;
+    }
+  
   </style>
 </head>
 <body>
   <p>hover right... <span class="tt" id="tool">HERE</span><br><br><br>also <span class="tt" id="also">here</span></p>
+  <p id="text"></p>
+  <div class="context">
+    <ul>
+      <li id="op1">Option 1</li>
+      <li id="op2">Option 2</li>
+      <li id="op3">Option 3</li>
+    </ul>
+  </div>
   <div class="tooltip">this is a tooltip</div>
 <script>
   $(document).mousemove(function(e){
@@ -64,6 +101,34 @@
   $("#also").mouseenter(function(){
     $(".tooltip").html("oh, this is also a tooltip");
   });
+  
+    $(document).on("contextmenu", function(e) {
+        e.preventDefault();
+        $(".context").css({
+          "opacity": "1",
+          "top": e.pageY,
+          "left": e.pageX
+        });
+    });
+    
+    $(document).click(function(e) {
+        $(".context").css({
+          "opacity": "0"
+        });
+    });
+    
+    $("#op1").click(function() {
+      $("#text").html("Option 1 selected");
+    });
+    
+    $("#op2").click(function() {
+      $("#text").html("Option 2 selected");
+    });
+    
+    $("#op3").click(function() {
+      $("#text").html("Option 3 selected");
+    });
+  
 </script>
 </body>
 </html>
