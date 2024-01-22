@@ -3,23 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Datepicker - Animations</title>
+  <title>jQuery UI Datepicker - Dates in other months</title>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/eggplant/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-  <style>
-    .drag {
-      border: 1px solid gray;
-      width: 200px;
-      height: 200px;
-    }
-  </style>
-  <script src="https://wither19.github.io/landing/jqui/scripts.js"></script>
+  <script>
+  $(function() {
+    $("#datepicker").datepicker({
+      showOtherMonths: true,
+      selectOtherMonths: true,
+      dateFormat: "DD, MM d, yy",
+    });
+  });
+  </script>
 </head>
 <body>
-<p>Date: <input type="text" id="datepicker" size="45"></p>
-<p id="text"></p>
-<div class="drag" id="grid">I adhere to a 40 x 40 grid!</div>
+ 
+<p>Date: <input type="text" id="datepicker" value="welcome to da datepicker"></p>
+ 
+ 
 </body>
 </html>
