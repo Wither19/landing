@@ -3,7 +3,7 @@
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
-      body {
+body {
   height: 1080px;
 }
 
@@ -38,18 +38,17 @@ div.box {
   cursor: pointer;
   user-select: none;
 }
-
     </style>
   </head>
 
   <body onload="idle(event)">
     <div class="scroll">0</div>
     <div class="box"></div>
-    <p id="target">pootis</p>
-    <p id="targets">pootis</p>
-    <p id="targeted">pootis</p>
+    <p tab-index="1" id="target">pootis</p>
+    <p tab-index="2" id="targets">pootis</p>
+    <p tab-index="3" id="targeted">pootis</p>
     <script>
-      var target = document.querySelector("#target");
+var target = document.querySelector("#target");
 var targets = document.querySelector("#targets");
 var targeted = document.querySelector("#targeted");
 
@@ -136,14 +135,20 @@ document.querySelector("body").onscroll = function(event) {
 
 target.addEventListener("mouseenter", move);
 target.addEventListener("mouseleave", reset);
+target.addEventListener("focus", move);
+target.addEventListener("blur", reset);
 target.addEventListener("click", grow);
 targets.addEventListener("mouseenter", move);
 targets.addEventListener("mouseleave", reset);
+target.addEventListener("focus", move);
+target.addEventListener("blur", reset);
+
 targets.addEventListener("click", grow);
 targeted.addEventListener("mouseenter", move);
 targeted.addEventListener("mouseleave", reset);
+target.addEventListener("focus", move);
+target.addEventListener("blur", reset);
 targeted.addEventListener("click", grow);
-
     </script>
   </body>
 
