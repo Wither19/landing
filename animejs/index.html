@@ -1,0 +1,150 @@
+<html>
+
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js" integrity="sha512-aNMyYYxdIxIaot0Y1/PLuEu3eipGCmsEUBrUq+7aVyPGMFH8z0eTP0tkqAvv34fzN6z+201d3T8HPb1svWSKHQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+      body {
+  height: 1071px;
+}
+
+div.scroll {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+div.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: sticky;
+  top: 10px;
+  left: 500px;
+  z-index: 2;
+}
+
+#target,
+#targets,
+#targeted {
+  display: block;
+  font-size: 40px;
+  background: lightblue;
+  color: antiquewhite;
+  width: 40%;
+  text-align: center;
+  border: skyblue 1px solid;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+    </style>
+  </head>
+
+  <body onload="idle(event)">
+    <div class="scroll">0</div>
+    <div class="box"></div>
+    <p id="target">pootis</p>
+    <p id="targets">pootis</p>
+    <p id="targeted">pootis</p>
+    <script>
+      var target = document.querySelector("#target");
+var targets = document.querySelector("#targets");
+var targeted = document.querySelector("#targeted");
+
+
+function idle(event) {
+  anime({
+    targets: "#target, #targets, #targeted",
+    duration: 1200,
+    translateX: ["25%", "25%"],
+    rotate: "0deg",
+    borderRadius: 12,
+    delay: anime.stagger(100, {
+      start: 100
+    })
+  });
+}
+
+function move(event) {
+  anime({
+    targets: event.currentTarget,
+    duration: 1200,
+    background: ["#ADD8E6", "#6A5ACD"],
+    translateX: ["25%", "40%"],
+    rotate: "6deg",
+    scale: 1,
+    borderRadius: 12,
+    boxShadow: "0px 0 4px gray",
+    delay: anime.stagger(100, {
+      start: 100
+    })
+  });
+
+}
+
+function reset(event) {
+  anime({
+    targets: event.currentTarget,
+    duration: 1200,
+    background: ["#6A5ACD", "#ADD8E6"],
+    translateX: "25%",
+    rotate: "0deg",
+    scale: 1,
+    borderRadius: 16,
+    boxShadow: "4px 4px 4px gray",
+    delay: anime.stagger(100, {
+      start: 100
+    })
+  });
+}
+
+function grow(event) {
+  anime({
+    targets: event.currentTarget,
+    duration: 600,
+    background: ["#ADD8E6", "#32CD32"],
+    scale: 1.35,
+    rotate: "6deg",
+    boxShadow: "4px 4px 4px gray",
+    delay: anime.stagger(100, {
+      start: 100
+    })
+  });
+}
+
+var squareChange = anime({
+  targets: ".box",
+  background: ["#FF0000", "#0000FF"],
+  borderRadius: "120px",
+  width: "200px",
+  height: "200px",
+  autoplay: false
+});
+
+
+document.querySelector("body").onscroll = function(event) {
+  let scaledScroll = (window.scrollY / 5).toFixed();
+  let scrollPercent = scaledScroll / 10;
+
+
+  document.querySelector("div.scroll").innerHTML = scaledScroll;
+
+  squareChange.seek(squareChange.duration * ((scrollPercent) / 100));
+};
+
+target.addEventListener("mouseenter", move);
+target.addEventListener("mouseleave", reset);
+target.addEventListener("click", grow);
+targets.addEventListener("mouseenter", move);
+targets.addEventListener("mouseleave", reset);
+targets.addEventListener("click", grow);
+targeted.addEventListener("mouseenter", move);
+targeted.addEventListener("mouseleave", reset);
+targeted.addEventListener("click", grow);
+
+    </script>
+  </body>
+
+</html>
