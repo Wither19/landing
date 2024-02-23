@@ -1,0 +1,38 @@
+.pokesprite {
+  transform: scale(2);
+}
+
+.pokesprite {
+  display: inline-block
+}
+
+.pokesprite.pokemon {
+  width: 68px;
+  height: 56px;
+  background: url('https://raw.githubusercontent.com/msikma/pokesprite-spritesheet/master/assets/pokesprite-pokemon-gen8.png');
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges
+}
+
+.pokesprite.wooper {
+  background-position: -1820px -464px
+}
+
+.pokesprite.quagsire {
+  background-position: -1890px -464px
+}
+
+.pokesprite.wooper.shiny {
+  background-position: -1470px -2900px
+}
+
+.pokesprite.quagsire.shiny {
+  background-position: -1540px -2900px
+}
+
+h1,
+button,
+p {
+  font-family: comic sans ms;
+  font-size: 36px;
+}
