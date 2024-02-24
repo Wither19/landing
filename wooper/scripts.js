@@ -3,9 +3,9 @@ const wooperTroop = document.querySelector(".wooperTroop");
 var shinyCount = 0;
 
 function wooperSpawn() {
-  for (let i = 0; i < 55; i++) {
+  for (let i = 0; i < 200; i++) {
     var whichEvo = Math.floor(Math.random() + 0.5);
-    var shinyHunt = Math.floor(Math.random() * 160 + 1);
+    var shinyHunt = Math.floor(Math.random() * 819 + 1);
 
     if (whichEvo == 0) {
       if (shinyHunt == 1) {
