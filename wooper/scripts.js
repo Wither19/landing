@@ -36,7 +36,7 @@ function wooperSpawn() {
         pokemon.classList.add("right");
       }
     }
-    document.querySelector(".wooperTroop").appendChild(pokemon);
+    wooperTroop.appendChild(pokemon);
   } // End of the loop
   $(".shinies").html(`Shinies found: ${shinyCount}`);
 } // End of the function
