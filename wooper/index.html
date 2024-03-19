@@ -2,18 +2,48 @@
 
   <head>
     <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
   </head>
 
   <body onload="wooperSpawn()">
+    <marquee scrollamount="9">
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon quagsire"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper shiny"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper"></span>
+      <span class="pokesprite pokemon wooper right"></span>
+    </marquee>
     <center>
       <button onclick="wooperSpawn()">spawn</button>
-      <button onclick="wooperReset()">reset wooper troop</button>
+      <button onclick="wooperReset()" title="Hint: You can also press R">reset wooper troop</button>
       <h1>wooper</h1>
       <p class="shinies"></p>
     </center>
     <div class="wooperTroop"></div>
-    <script src="scripts.js"></script>
+    <center class="info">
+      <h1>Odds and Stuff</h1>
+      <p>
+	  <span class="pokesprite pokemon wooper" style="position: relative; top: -16px; left: 16px;"></span><br>Wooper<br><sub>Roughly 97% chance</sub><br>
+	  <span class="pokesprite pokemon wooper right" style="position: relative; top: -16px; left: 16px;"></span><br>Wooper →<br><sub>1/6</sub><br>
+	  <span class="pokesprite pokemon quagsire" style="position: relative; top: -16px; left: -4px;"></span><br>Quagsire <br><sub>1/12</sub><br>
+	  <span class="pokesprite pokemon quagsire right" style="position: relative; top: -16px; left: 0px;"></span><br>Quagsire →<br><sub>1/72</sub><br>
+	  	  <span class="pokesprite pokemon wooper shiny" style="position: relative; top: -16px; left: 16px;"></span><br><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shiny-charm.png" style="width: 40px; position: relative; top: 6px;">Wooper<br><sub>1/40</sub><br>
+	  <span class="pokesprite pokemon wooper shiny right" style="position: relative; top: -16px; left: 16px;"></span><br><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shiny-charm.png" style="width: 40px; position: relative; top: 6px;">Wooper →<br><sub>1/240</sub><br>
+	  <span class="pokesprite pokemon quagsire shiny" style="position: relative; top: -16px; left: -4px;"></span><br><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shiny-charm.png" style="width: 40px; position: relative; top: 6px;">Quagsire <br><sub>1/480</sub><br>
+	  <span class="pokesprite pokemon quagsire shiny right" style="position: relative; top: -16px; left: 0px;"></span><br><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/items/shiny-charm.png" style="width: 40px; position: relative; top: 6px;">Quagsire →<br><sub>1/2880</sub><br>
+</p>
+    </center>
   </body>
 
 </html>
