@@ -53,13 +53,14 @@ p {
 }
 
 
-sub, p sub {
-	font-size: 20px;
-	position: relative;
-	top: -24px;
-	font-style: italic;
+sub,
+p sub {
+  font-size: 20px;
+  position: relative;
+  top: -24px;
+  font-style: italic;
 }
 
 center.info * {
-	font-family: helvetica;
+  font-family: helvetica;
 }
