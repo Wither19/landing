@@ -56,9 +56,8 @@ p {
 sub,
 p sub {
   font-size: 20px;
-  position: relative;
-  top: -24px;
-  font-style: italic;
+	font-style: italic;
+	margin: 20px auto;
 }
 
 center.info * {
