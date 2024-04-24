@@ -1,65 +1,17 @@
-.pokesprite {
-  transform: scale(2);
+.shiny {
+  width: 24px;
 }
 
-marquee {
-  background: #e0c16c;
-  border: 4px solid brown;
-  border-radius: 10px;
+.sprite {
+  width: 256px;
 }
 
-marquee span {
-  position: relative;
-  top: -18px;
-}
-
-.pokesprite {
-  display: inline-block
-}
-
-.pokesprite.right {
-  transform: rotateY(180deg) scale(2);
-}
-
-.pokesprite.pokemon {
-  width: 68px;
-  height: 56px;
-  background: url('https://raw.githubusercontent.com/msikma/pokesprite-spritesheet/master/assets/pokesprite-pokemon-gen8.png');
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges
-}
-
-.pokesprite.wooper {
-  background-position: -1820px -464px
-}
-
-.pokesprite.quagsire {
-  background-position: -1890px -464px
-}
-
-.pokesprite.wooper.shiny {
-  background-position: -1470px -2900px
-}
-
-.pokesprite.quagsire.shiny {
-  background-position: -1540px -2900px
-}
-
-h1,
-button,
-p {
-  font-family: comic sans ms;
-  font-size: 36px;
-}
-
-
-sub,
-p sub {
+.name sub {
   font-size: 20px;
-	font-style: italic;
-	margin: 20px auto;
 }
 
-center.info * {
-  font-family: helvetica;
+.health {
+  height: 24px;
+  background: rgb(111, 226, 111);
+  color: whitesmoke;
 }
