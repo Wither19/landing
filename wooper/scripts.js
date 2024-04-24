@@ -1,58 +1,70 @@
-const doc = document.querySelector("body");
-const wooperTroop = document.querySelector(".wooperTroop");
-var shinyCount = 0;
-var shinyQuagCount = 0;
+var currentHealth;
+var maxHealth;
+var clickValue = 1;
+var exp;
+var userLvl = 1;
+var clickBonuses = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const expThresholds = [1, 50, 100, 200, 300, 450, 600, 750, 1000, 1250, 1500];
 
-function wooperSpawn() {
-  for (let i = 0; i < 25; i++) {
-    var faceRight = Math.floor(Math.random() * 6 + 1);
-    var whichEvo = Math.floor(Math.random() * 12 + 1);
-    var shinyHunt = Math.floor(Math.random() * 40 + 1);
-    var pokemon = document.createElement("span");
-    pokemon.classList.add("pokesprite");
-    pokemon.classList.add("pokemon");
-    if (whichEvo != 1) {
-      pokemon.classList.add("wooper");
-      if (shinyHunt == 1) {
-        pokemon.classList.add("shiny");
-        shinyCount++;
-        if (faceRight == 1) {
-          pokemon.classList.add("right");
-        }
-      }
-      if (faceRight == 1) {
-        pokemon.classList.add("right");
-      }
-    } else if (whichEvo == 1) {
-      pokemon.classList.add("quagsire");
-      if (shinyHunt == 1) {
-        pokemon.classList.add("shiny");
-        shinyCount++;
-        if (faceRight == 1) {
-          pokemon.classList.add("right");
-        }
-      }
-      if (faceRight == 1) {
-        pokemon.classList.add("right");
-      }
-    }
-    wooperTroop.appendChild(pokemon);
-  } // End of the loop
-  $(".shinies").html(`Shinies found: ${shinyCount}`);
-} // End of the function
+function spawn() {
+  let health = 55;
+  let levelRange = Math.floor(Math.random() * 15 + 5);
+  let shinyThreshold = Math.floor(Math.random() * 25);
+  if (shinyThreshold === 1) {
+    $("img.sprite").attr(
+      "src",
+      `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/194.png`
+    );
+    $(".name sub").html(
+      '<img class="shiny" src="https://images.vexels.com/media/users/3/196596/isolated/preview/92ba8e221ba7c1f7c1e7151dbf3e50d4-clean-squeaky-icon.png"> Lv. ' +
+        levelRange
+    );
+    currentHealth = (3.1 * levelRange + health).toFixed();
+    maxHealth = (3.1 * levelRange + health).toFixed();
+    $(".health").html(currentHealth + " / " + maxHealth);
+    $(".health").css({
+      width: currentHealth * 2 + "px",
+    });
+  } else {
+    $("img.sprite").attr(
+      "src",
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png"
+    );
+    $(".name sub").html("Lv. " + levelRange);
 
-function wooperChange() {
-  $(".pokemon").toggleClass("shiny");
-}
-
-
-function wooperReset() {
-  wooperTroop.innerHTML = '';
-  wooperSpawn();
-}
-
-$(document).keydown(function(e) {
-  if (e.key == "r") {
-    wooperReset();
+    currentHealth = (3.1 * levelRange + health).toFixed();
+    maxHealth = (3.1 * levelRange + health).toFixed();
+    $(".health").html(currentHealth + " / " + maxHealth);
+    $(".health").css({
+      width: currentHealth * 2 + "px",
+    });
   }
+}
+
+function damage() {
+  currentHealth -= clickValue;
+  $(".health").html(currentHealth + " / " + maxHealth);
+  $(".health").css({
+    width: currentHealth * 2 + "px",
+  });
+  if (currentHealth <= 0) {
+    faint();
+  }
+}
+
+function faint() {
+  exp += maxHealth / 5;
+  spawn();
+  $(".exp").html(`Level ${userLvl}`);
+  $("div.bar.xp").html(`${exp} / ${expThresholds[userLvl]}`);
+}
+
+$(document).keydown(function (e) {
+  if (e.key === "r") {
+    spawn();
+  }
+});
+
+$(".sprite").click(function () {
+  damage();
 });
