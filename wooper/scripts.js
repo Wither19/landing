@@ -1,9 +1,15 @@
 var currentHealth;
 var maxHealth;
 var clickValue = 1;
+var xAttackMult = 1;
+var xAttackEnabled = false;
+var totalDamage = clickValue * xAttackMult;
 var exp = 0;
 var userLvl = 1;
-var critChance = 20;
+var critChance = 25 * direHitMult;
+var direHitMult = 1;
+var direHitEnabled = false;
+var critDamage = 3;
 var shinyOdds = 50;
 var quagsireSpawnChance = 15;
 const clickBonuses = [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2];
@@ -71,11 +77,17 @@ function spawn() {
 }
 
 function damage() {
-  let crit = Math.floor(Math.random() * critChance);
+  let crit = Math.floor(Math.random() * (20 / direHitMult));
   if (crit === 1) {
-    currentHealth -= clickValue * 3;
+    currentHealth -= 1 * xAttackMult * critDamage;
+    $(".lostHealth").html(
+      `<span style="font-weight: 900;">-${
+        totalDamage * critDamage
+      } Critical Hit!</span>`
+    );
   } else {
-    currentHealth -= clickValue;
+    currentHealth -= totalDamage;
+    $(".lostHealth").html(`-${totalDamage}`);
   }
   $(".healthNumbers").html(currentHealth + " / " + maxHealth);
 
@@ -135,13 +147,16 @@ $(document).keydown(function (e) {
     spawn();
   } else if (e.key === " ") {
     damage();
+    e.preventDefault();
   } else if (e.key === "/") {
     $(".diag").toggleClass("show");
     $("#evoC").html(
       `<img class="box" src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/regular/quagsire.png"><br> 1/${quagsireSpawnChance}`
     );
 
-    $("#critC").html(`${100 / critChance}%`);
+    $("#critC").html(`${100 / (20 / direHitMult)}%`);
+
+    $("#critDmg").html(`${critDamage}x`);
 
     $("#shinyC").html(
       `<img class="box" src="https://raw.githubusercontent.com/msikma/pokesprite/master/pokemon-gen8/shiny/wooper.png"><br> 1/${shinyOdds}`
@@ -152,3 +167,38 @@ $(document).keydown(function (e) {
 $(".sprite").click(function () {
   damage();
 });
+
+$("#xAttack").click(function () {
+  if (userLvl >= 1) {
+    xAttackEnabled = !xAttackEnabled;
+    $("#xAttack").toggleClass("active");
+  } else {
+    alert("How are you less than Level 1? I suspect hacking");
+  }
+});
+
+$("#direHit").click(function () {
+  if (userLvl >= 3) {
+    direHitEnabled = !direHitEnabled;
+    $("#direHit").toggleClass("active");
+  } else {
+    alert("Dire Hit is unlocked at Level 3!");
+  }
+});
+
+$(".upgradeButton").click(function () {
+  setTimeout(100, itemCheck);
+});
+
+function itemCheck() {
+  if (direHitEnabled === true) {
+    direHitMult = 2;
+  } else if (direHitEnabled !== true) {
+    direHitMult = 1;
+  }
+  if (xAttackEnabled === true) {
+    xAttackMult = 2;
+  } else if (xAttackEnabled !== true) {
+    xAttackMult = 1;
+  }
+}
