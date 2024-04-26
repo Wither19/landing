@@ -40,8 +40,9 @@
   left: 0px;
   background: linear-gradient(135deg, whitesmoke, white, lightgray, slategray);
   width: 100%;
-  height: 100%;
-  z-index: 3
+  height: 150%;
+  z-index: 3;
+  overflow: hidden hidden;
 }
 
 .diag.show {
@@ -59,4 +60,33 @@
 .box {
   width: 80px;
   image-rendering: pixelated;
+}
+
+.lostHealth {
+  color: red;
+  font-size: 20px;
+}
+
+.upgrades {
+  margin: 48px;
+}
+
+span.state {
+  font-size: 24px;
+}
+
+.itemSprite {
+  width: 48px;
+}
+
+.upgradeButton {
+  margin: 8px;
+  padding: 0px 24px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.upgradeButton.active {
+  background: slateblue;
+  color: rgb(249, 244, 237);
 }
