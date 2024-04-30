@@ -205,39 +205,6 @@ body.dark .code:hover, body.dark .plist:hover {
   z-index: 3;
   position: absolute;
 }
-
-#music {
-  position: fixed;
-  top: 15%;
-  z-index: 5;
-  width: 65%;
-}
-#music::backdrop {
-  background-color: gray;
-  opacity: 1;
-}
-#music div {
-
-}
-#music div:nth-child(odd) {
-  background: white;
-}
-#music div:nth-child(even) {
-  background: lightgray;
-}
-#music h3 img {
-  width: 64px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 8px;
-  position: relative;
-  left: -30%;
-  padding: 5px 0px 0px 0px;
-}
-#music > h3 > span {
-  position: relative;
-  top: -36px;
-  left: -20%;
-}
     </style>
 </head>
 <body class="">
@@ -247,7 +214,7 @@ body.dark .code:hover, body.dark .plist:hover {
     <h1 id="top">Welcome to my domain<br><sub>(Now with JQuery)</sub></h1> 
     <br>
     <h1 id="shortcuts">Shortcuts<i class="bi bi-caret-down-fill"></i></sub></h1>
-    <div id="dropdownshortcuts" class="nah">
+    <center id="dropdownshortcuts" class="nah">
         <br>
         <kbd>c</kbd> - Closes any open dropdowns on the site
         <br><br>
@@ -258,7 +225,8 @@ body.dark .code:hover, body.dark .plist:hover {
         <kbd>p</kbd> - opens song selection
         <br><br>
         <br><hr><br>
-    </div>
+    </center>
+    <h1>Navigation</h1>
     <div class="flex">
       <div id="tab-one">Projects</div>
       <div id="tab-two">Experimentation</div>
@@ -339,18 +307,4 @@ body.dark .code:hover, body.dark .plist:hover {
     <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/hfsVXy51pUc?si=ecP6o660lO6m4v8g" width="226px" height="400px"></iframe>
     <iframe class="youtubeshortsmobile" src="https://youtube.com/embed/nU8fMyZDO9o?si=DofeKTnQeAGUEvJm" width="226px" height="400px"></iframe></center>
     <script src="https://wither19.github.io/landing/scripts.js"></script>
-    <script>
-    $("#plist").click(function(){
-      $("#music").showModal();
-    });
-    $(document).keydown(function(e){
-      if (e.which == 80) {
-        $("#music").showModal();
-      }
-    });
-    
-    $("#music button").click(fucntion(){
-      $("#music").close();
-    });
-    </script>
 </body></html>
